@@ -8,6 +8,7 @@
         <title>{{ config('app.name', 'Laravel') }}</title>
 
         <!-- Fonts -->
+        <link rel="stylesheet" href="{{ asset('css/style.css') }}">
         <link rel="preconnect" href="https://fonts.bunny.net">
         <link href="https://fonts.bunny.net/css?family=figtree:400,500,600&display=swap" rel="stylesheet" />
 
@@ -28,9 +29,11 @@
             @endif
 
             <!-- Page Content -->
-            <main>
-                {{ $slot }}
-            </main>
+            @isset($slot)
+                <main>
+                    {{ $slot }}
+                </main>
+            @endisset
         </div>
     </body>
 </html>
