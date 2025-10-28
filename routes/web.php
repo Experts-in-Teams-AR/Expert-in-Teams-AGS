@@ -1,8 +1,12 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\ExportController;
+use App\Http\Controllers\ResultController;
+use App\Http\Controllers\SetupController;
+use App\Http\Controllers\StartController;
 
-Route::view('/', 'main');
+Route::view('/', 'main')->name('main');
 
 Route::view('audience-reactor', 'about')->name('about');
 Route::view('what-it-is', 'about')->name('what');
@@ -24,6 +28,12 @@ Route::view('business', 'business')->name('business');
 Route::view('pricing', 'pricing')->name('pricing');
 
 Route::view('faq', 'faq')->name('faq');
+
+Route::get('/setup', [SetupController::class, 'index'])->middleware(['auth'])->name('setup');
+Route::get('/start', [StartController::class, 'index'])->middleware(['auth'])->name('start');
+Route::get('/results', [ResultController::class, 'index'])->middleware(['auth'])->name('results');
+
+Route::get('/export', [ExportController::class, 'index'])->middleware(['auth'])->name('export');
 
 Route::view('profile', 'profile')->middleware(['auth'])->name('profile');
 Route::view('dashboard', 'dashboard')->middleware(['auth'])->name('dashboard');

@@ -2,8 +2,8 @@
     nav ul {
         list-style: none;
         display: flex;
-        justify-content: flex-start;
-        gap: 20px;
+        justify-content: left;
+        gap: 50px;
         margin: 0;
         padding: 0;
     }
@@ -11,7 +11,7 @@
         position: relative; 
     }
     nav ul li a {
-        padding: 2rem;
+        padding: 0.5rem;
         display: block;
     }
     nav ul li a:hover {
@@ -61,6 +61,13 @@
 
         <li class="dropdown">
             <a href="{{ route('practice') }}">PRACTICE</a>
+            @auth 
+                <ul class="dropdown-menu">
+                    <li><a href="{{ route('setup') }}">Setup device</a></li>
+                    <li><a href="{{ route('start') }}">Start practice</a></li>
+                    <li><a href="{{ route('results') }}">See results</a></li>
+                </ul>
+            @endauth
         </li>
 
         <li class="dropdown">
@@ -69,6 +76,9 @@
                 <li><a href="{{ route('blog') }}">Blog</a></li>
                 <li><a href="{{ route('case') }}">Case studies</a></li>
                 <li><a href="{{ route('research') }}">Research</a></li>
+                @auth
+                    <li><a href="{{ route('export') }}">Export data</a></li>
+                @endauth
             </ul>
         </li>
 
