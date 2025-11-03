@@ -45,57 +45,74 @@
     .dropdown:hover .dropdown-menu {
         display: block;
     }
+
+    .nav-link.active {
+        text-decoration: underline;
+        text-decoration-color: #9EE493;
+        text-decoration-thickness: 4px;
+        text-underline-offset: 8px;
+        font-weight: bold;
+    }
 </style>
 
 <nav>
+    @guest 
     <ul>
         <li class="dropdown">
-            <a href="{{ route('about') }}">ABOUT AUDIENCE REACTOR</a>
+            <a href="{{ route('about') }}" class="nav-link {{ Route::is('about*') ? 'active' : '' }}">ABOUT AUDIENCE REACTOR</a>
             <ul class="dropdown-menu">
-                <li><a href="{{ route('what') }}">What is Audiance Reactor?</a></li>
-                <li><a href="{{ route('why') }}">Why it matters?</a></li>
-                <li><a href="{{ route('how') }}"> How it works?</a></li>
-                <li><a href="{{ route('meet') }}">Meet our team!</a></li>
+                <li><a href="{{ route('about.what') }}">What is Audiance Reactor?</a></li>
+                <li><a href="{{ route('about.why') }}">Why it matters?</a></li>
+                <li><a href="{{ route('about.how') }}"> How it works?</a></li>
+                <li><a href="{{ route('about.meet') }}">Meet our team!</a></li>
             </ul>
         </li>
 
         <li class="dropdown">
-            <a href="{{ route('practice') }}">PRACTICE</a>
-            @auth 
-                <ul class="dropdown-menu">
-                    <li><a href="{{ route('setup') }}">Setup device</a></li>
-                    <li><a href="{{ route('start') }}">Start practice</a></li>
-                    <li><a href="{{ route('results') }}">See results</a></li>
-                </ul>
-            @endauth
+            <a href="{{ route('practice') }}" class="nav-link {{ Route::is('practice') ? 'active' : '' }}">PRACTICE</a>
         </li>
 
         <li class="dropdown">
-            <a href="{{ route('resources') }}">RESOURCES</a>
+            <a href="{{ route('resources') }}" class="nav-link {{ Route::is('resources*') ? 'active' : '' }}">RESOURCES</a>
             <ul class="dropdown-menu">
-                <li><a href="{{ route('blog') }}">Blog</a></li>
-                <li><a href="{{ route('case') }}">Case studies</a></li>
-                <li><a href="{{ route('research') }}">Research</a></li>
-                @auth
-                    <li><a href="{{ route('export') }}">Export data</a></li>
-                @endauth
+                <li><a href="{{ route('resources.blog') }}">Blog</a></li>
+                <li><a href="{{ route('resources.case') }}">Case studies</a></li>
+                <li><a href="{{ route('resources.research') }}">Research</a></li>
+                <li><a href="{{ route('resources.export') }}">Export data</a></li>
             </ul>
         </li>
 
         <li class="dropdown">
-            <a href="{{ route('enterprise') }}">ENTERPRISE</a>
+            <a href="{{ route('enterprise') }}" class="nav-link {{ Route::is('enterprise*') ? 'active' : '' }}">ENTERPRISE</a>
             <ul class="dropdown-menu">
-                <li><a href="{{ route('education') }}">For education</a></li>
-                <li><a href="{{ route('business') }}">For business</a></li>
+                <li><a href="{{ route('enterprise.education') }}">For education</a></li>
+                <li><a href="{{ route('enterprise.business') }}">For business</a></li>
             </ul>
         </li>
 
          <li class="dropdown">
-            <a href="{{ route('pricing') }}">PRICING</a>
+            <a href="{{ route('pricing') }}" class="nav-link {{ Route::is('pricing') ? 'active' : '' }}">PRICING</a>
         </li>
 
          <li class="dropdown">
-            <a href="{{ route('faq') }}">FAQ</a>
+            <a href="{{ route('faq') }}" class="nav-link {{ Route::is('faq') ? 'active' : '' }}">FAQ</a>
         </li>
     </ul>
+    @endguest
+
+    @auth
+    <ul>
+        <li class="dropdown">
+            <a href="{{ route('session.setup') }}" class="nav-link {{ Route::is('session.*') ? 'active' : '' }}">START PRACTICE</a>
+        </li>
+
+         <li class="dropdown">
+            <a href="{{ route('tips') }}" class="nav-link {{ Route::is('tips') ? 'active' : '' }}">PRACTICE TIPS</a>
+        </li>
+
+         <li class="dropdown">
+            <a href="{{ route('history') }}" class="nav-link {{ Route::is('history') ? 'active' : '' }}">VIEW PAST FEEDBACK</a>
+        </li>
+    </ul>
+    @endauth 
 </nav>

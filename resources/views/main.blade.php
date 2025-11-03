@@ -68,7 +68,7 @@
 
         <div class="button-spacing">
             <div class="button">
-                <a href="{{ route('how') }}"> &#9654; See how it works! </a>
+                <a href="{{ route('about.how') }}"> &#9654; See how it works! </a>
             </div>
         </div>
     </div>
