@@ -11,7 +11,7 @@
         position: relative; 
     }
     nav ul li a {
-        padding: 0.5rem;
+    padding: 8px;
         display: block;
     }
     nav ul li a:hover {
@@ -26,7 +26,7 @@
         top: 100%;
         left: 0;
         list-style: none;
-        padding: 0.5rem 0;
+    padding: 8px 0;
         margin: 0;
         border-radius: 4px;
         min-width: 160px;
@@ -34,7 +34,7 @@
     }
 
     .dropdown-menu li a {
-        padding: 0.5rem 1rem;
+    padding: 8px 16px;
         display: block;
     }
 
@@ -59,12 +59,12 @@
     @guest 
     <ul>
         <li class="dropdown">
-            <a href="{{ route('about') }}" class="nav-link {{ Route::is('about*') ? 'active' : '' }}">ABOUT AUDIENCE REACTOR</a>
+            <a href="{{ route('main') }}">ABOUT AUDIENCE REACTOR</a>
             <ul class="dropdown-menu">
-                <li><a href="{{ route('about.what') }}">What is Audiance Reactor?</a></li>
-                <li><a href="{{ route('about.why') }}">Why it matters?</a></li>
-                <li><a href="{{ route('about.how') }}"> How it works?</a></li>
-                <li><a href="{{ route('about.meet') }}">Meet our team!</a></li>
+                <li><a href="{{ route('main') }}#what-is-it">What is Audiance Reactor?</a></li>
+                <li><a href="{{ route('main') }}#why-it-matters">Why it matters?</a></li>
+                <li><a href="{{ route('how') }}"> How it works?</a></li>
+                <li><a href="{{ route('meet') }}">Meet our team!</a></li>
             </ul>
         </li>
 
