@@ -63,7 +63,7 @@
             <ul class="dropdown-menu">
                 <li><a href="{{ route('home') }}#what-is-it">What is Audiance Reactor?</a></li>
                 <li><a href="{{ route('home') }}#why-it-matters">Why it matters?</a></li>
-                <li><a href="{{ route('home') }}"> How it works?</a></li>
+                <li><a href="{{ route('home') }}#how-it-works"> How it works?</a></li>
                 <li><a href="{{ route('home') }}">Meet our team!</a></li>
             </ul>
         </li>

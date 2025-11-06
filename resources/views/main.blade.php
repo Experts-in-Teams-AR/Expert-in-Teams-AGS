@@ -49,7 +49,7 @@
         margin-top: 70px;
         margin-left: 300px;
         margin-right: 300px;
-        height: 100vh;
+        height: 75vh;
     }
 
     .section-title{
@@ -63,8 +63,8 @@
 
     .spacing-section2 {
             justify-content: center;
-            margin-left: 120px;
-            margin-right: 120px;
+            margin-left: 180px;
+            margin-right: 180px;
                 min-height: 100vh;
                 padding-top: 40px;
         }
@@ -172,29 +172,29 @@
                 Audience Reactor listens, analyses, and reacts to your speech in real time just like a true audience would! 
                 It helps you improve your delivery, pacing, and confidence — without judgment.
             </p>
-            <div class="cards">
+            <div class="cards grid gap-8 md:grid-cols-3 mt-20 text-center text-xl">
                 <div class="card">
-                    <div class="icon1">
-                        <img src="/images/speak-icon.svg" alt="Speak icon" />
+                    <div class="icon1 justify-center flex">
+                        <img src="/images/1.svg" width="100" height="100" alt="Speak icon" />
                     </div>
-                    <h3 class="card-title1">SPEAK</h3>
-                    <p class="card-text1">Rehearse your speech in front of Audience Reactor</p>
+                    <h3 class="card-title1 mt-5 text-[var(--text-dark)] text-2xl">SPEAK</h3>
+                    <p class="card-text1 mt-5">Rehearse your speech in front of Audience Reactor</p>
                 </div>
 
                 <div class="card">
-                    <div class="icon2">
-                        <img src="/images/react-icon.svg" alt="React icon" />
+                    <div class="icon2 justify-center flex">
+                        <img src="/images/2.svg" width="100" height="100" alt="React icon" />
                     </div>
-                    <h3 class="card-title2">REACT</h3>
-                    <p class="card-text2">See feedback live and improve while speaking</p>
+                    <h3 class="card-title2 mt-5 text-[var(--text-dark)] text-2xl">REACT</h3>
+                    <p class="card-text2 mt-5">See feedback live and improve while speaking</p>
                 </div>
 
                 <div class="card">
-                    <div class="icon3">
-                        <img src="/images/improve-icon.svg" alt="Improve icon" />
+                    <div class="icon3 justify-center flex">
+                        <img src="/images/3.svg" width="100" height="100" alt="Improve icon" />
                     </div>
-                    <h3 class="card-title3">IMPROVE</h3>
-                    <p class="card-text3">Review your speech and get performance insights</p>
+                    <h3 class="card-title3 mt-5 text-[var(--text-dark)] text-2xl">IMPROVE</h3>
+                    <p class="card-text3 mt-5">Review your speech and get performance insights</p>
                 </div>
             </div>
         </section>
@@ -226,7 +226,7 @@
         </section>
 
         <div class="mt-10">
-            <h2 class="why-feature-title text-center">Your message deserves to be heard!
+            <h2 class="why-feature-title text-center text-4xl">Your message deserves to be heard!
                 Practice smarter, speak with confidence, and deliver with impact.</h2>
             <div class="button-spacing">
                 <div class="button">
@@ -306,11 +306,32 @@
                 <p class="text-4xl text-[var(--text-dark)]">Visual Feedback:</p>
 
                 <div class="bg-white rounded-2xl shadow-sm p-6 border border-gray-100 hover:shadow-md transition-shadow mt-7">
-                    <span class="text-3xl text-green-500">“</span>
-                    <p class="text-[var(--text-grey)] mt-2 mb-4 leading-relaxed">
-                    As a startup founder, practicing my pitch with Audience Reactor made a huge difference. I landed my seed funding!
-                    </p>
-                    <p class="text-sm font-medium text-gray-500">— Startup Founder</p>
+                     <ul class="space-y-4">
+                        <li class="flex items-start">
+                            <img src="/images/speed.png" alt="Speed" class="w-6 h-6 mr-3 mt-1">
+                            <span><strong>Speed:</strong> How fast you’re speaking during your talk.</span>
+                            </li>
+                            <li class="flex items-start">
+                            <img src="/images/clarity.png" alt="Clarity" class="w-6 h-6 mr-3 mt-1">
+                            <span><strong>Clarity:</strong> How understandable your words are.</span>
+                            </li>
+                            <li class="flex items-start">
+                            <img src="/images/tone.png" alt="Tone" class="w-6 h-6 mr-3 mt-1">
+                            <span><strong>Tone:</strong> The emotional character of your voice.</span>
+                            </li>
+                            <li class="flex items-start">
+                            <img src="/images/volume.png" alt="Volume" class="w-6 h-6 mr-3 mt-1">
+                            <span><strong>Volume:</strong> The strength and projection of your speech.</span>
+                            </li>
+                            <li class="flex items-start">
+                            <img src="/images/fillers.png" alt="Filler words" class="w-6 h-6 mr-3 mt-1">
+                            <span><strong>Filler words:</strong> Detection of “uh”, “um”, and similar hesitations.</span>
+                            </li>
+                            <li class="flex items-start">
+                            <img src="/images/emotion.png" alt="Emotion" class="w-6 h-6 mr-3 mt-1">
+                            <span><strong>Emotion:</strong> The sentiment and expressiveness of your delivery.</span>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </div>
