@@ -223,14 +223,59 @@
             </ul>
         </section>
 
-        <section>
-        <h2 class="why-feature-title">Your message deserves to be heard!
-            Practice smarter, speak with confidence, and deliver with impact.</h2>
-        <div class="button-spacing">
-            <div class="button">
-                <a href="{{ route('profile') }}"> Try Audience Reactor today! &#8594 </a>
+        <div class="mt-10">
+            <h2 class="why-feature-title">Your message deserves to be heard!
+                Practice smarter, speak with confidence, and deliver with impact.</h2>
+            <div class="button-spacing">
+                <div class="button">
+                    <a href="{{ route('profile') }}"> Try Audience Reactor today! &#8594 </a>
+                </div>
             </div>
-        </section>
-
+        </div>
     </div>
+
+    {{-- Fourth View --}}
+
+    <section class="min-h-screen pt-40 flex flex-col justify-center max-w-6xl mx-auto px-6 text-center">
+        <h2 class="why-feature-title text-[30px] font-normal text-[var(--text-dark)] text-center font-[var(--base-font)] pb-20">
+            "Good speakers inspire, lead, and connect. 
+            Whether you're presenting at university, pitching a startup, or teaching others to communicate —
+            great delivery makes all the difference. 
+            Audience Reactor helps you find your authentic voice, practice with purpose, and perform with confidence."
+        </h2>
+
+        <div class="grid gap-8 md:grid-cols-3">
+            <!-- Card 1 -->
+            <div class="bg-white rounded-2xl shadow-sm p-6 border border-gray-100 hover:shadow-md transition-shadow">
+            <span class="text-3xl text-green-500">“</span>
+            <p class="text-[var(--text-grey)] mt-2 mb-4 leading-relaxed">
+                Audience Reactor helped me overcome my fear of public speaking. The real-time feedback gave me confidence I never had before.
+            </p>
+            <p class="text-sm font-medium text-gray-500">— University Student</p>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="bg-white rounded-2xl shadow-sm p-6 border border-gray-100 hover:shadow-md transition-shadow">
+            <span class="text-3xl text-green-500">“</span>
+            <p class="text-[var(--text-grey)] mt-2 mb-4 leading-relaxed">
+                As a startup founder, practicing my pitch with Audience Reactor made a huge difference. I landed my seed funding!
+            </p>
+            <p class="text-sm font-medium text-gray-500">— Startup Founder</p>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="bg-white rounded-2xl shadow-sm p-6 border border-gray-100 hover:shadow-md transition-shadow">
+            <span class="text-3xl text-green-500">“</span>
+            <p class="text-[var(--text-grey)] mt-2 mb-4 leading-relaxed">
+                The judgment-free environment let me experiment and find my authentic speaking style. Game changer for educators.
+            </p>
+            <p class="text-sm font-medium text-gray-500">— Teacher</p>
+            </div>
+        </div>
+    </section>
+
+    {{--Fifth View --}}
+
+    
+
 </x-app-layout>

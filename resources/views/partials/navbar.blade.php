@@ -59,12 +59,12 @@
     @guest 
     <ul>
         <li class="dropdown">
-            <a href="{{ route('main') }}">ABOUT AUDIENCE REACTOR</a>
+            <a href="{{ route('home') }}">ABOUT AUDIENCE REACTOR</a>
             <ul class="dropdown-menu">
-                <li><a href="{{ route('main') }}#what-is-it">What is Audiance Reactor?</a></li>
-                <li><a href="{{ route('main') }}#why-it-matters">Why it matters?</a></li>
-                <li><a href="{{ route('how') }}"> How it works?</a></li>
-                <li><a href="{{ route('meet') }}">Meet our team!</a></li>
+                <li><a href="{{ route('home') }}#what-is-it">What is Audiance Reactor?</a></li>
+                <li><a href="{{ route('home') }}#why-it-matters">Why it matters?</a></li>
+                <li><a href="{{ route('home') }}"> How it works?</a></li>
+                <li><a href="{{ route('home') }}">Meet our team!</a></li>
             </ul>
         </li>
 

@@ -16,11 +16,11 @@ Route::get('/', function () {
 
 Route::view('home', 'main')->name('home');
 
-Route::view('audience-reactor', 'about')->name('about');
-Route::view('what-it-is', 'about')->name('about.what');
-Route::view('why-it-matters', 'why')->name('about.why');
-Route::view('how-it-works', 'how')->name('about.how');
-Route::view('meet-us', 'meet')->name('about.meet');
+Route::view('audience-reactor', 'main')->name('about');
+Route::view('what-it-is', 'main')->name('about.what');
+Route::view('why-it-matters', 'main')->name('about.why');
+Route::view('how-it-works', 'main')->name('about.how');
+Route::view('meet-us', 'main')->name('about.meet');
 
 Route::view('practice', 'practice')->name('practice');
 
