@@ -15,14 +15,9 @@
 
     /* Typography */
     --base-font: "Poppins", sans-serif;
-    --base-font-size: 14px;
+    --base-font-size: 16px;
 }
 
-/* ----------------------------------------------------------------- */
-/* 2. Base/Global Styles (Custom Element Overrides) */
-/* Applied to the body and universal elements. This is usually where you override */
-/* Tailwind's defaults or add non-utility styles. */
-/* ----------------------------------------------------------------- */
 body {
     font-family: var(--base-font);
     font-size: var(--base-font-size);
@@ -33,137 +28,19 @@ body {
     padding: 0;
 }
 
-
-/* ----------------------------------------------------------------- */
-/* 3. Local/Contextual Styles (Custom Components) */
-/* Use classes to override size and layout, but inherit the colors/font. */
-/* These custom classes should be defined AFTER the Tailwind utilities for clear priority. */
-/* ----------------------------------------------------------------- */
-
-/* Header Styles */
 .site-header {
     background-color: var(--background);
     color: var(--text-grey); /* Override text color for dark background */
     padding: 24px 16px;
 }
 
-.headline {
-    font-size: 64px; /* 64px */
-    font-family: var(--base-font);
-    text-align: center;
-    color: var(--text-dark);
-}
-
-.subline1 {
-    font-size: 28px; /* 28px */
-    font-family: var(--base-font);
-    margin-top: 30px; /* 30px */
-    text-align: center;
-    font-weight: 400;
-    color: var(--text-grey);
-}
-
-.subline2 {
-    font-size: 25px; /* 25px */
-    font-family: var(--base-font);
-    margin-top: 30px;
-    text-align: center;
-    font-weight: 400;
-    color: var(--text-grey);
-}
-
-/* Buttons */
-.button {
-    background-color: var(--button-bg);
-    padding: 12px 32px;
-    border-radius: 8px;
-    font-size: 25px; /* 25px */
-    font-family: var(--base-font);
-    margin-top: 30px;
-    text-align: center;
-    font-weight: 500;
-    color: var(--button-text);
-    transition: background-color 0.3s ease;
-}
 
 .button:hover {
     background-color: var(--button-bg-hover);
 }
 
-/* Layout Wrappers */
-.button-spacing {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-}
-
-.spacing-home{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 70px;
-    margin-left: 300px;
-    margin-right: 300px;
-    min-height: 100vh;
-}
 
 html {
   scroll-behavior: smooth;
 }
 
-/*
-.header-title {
-    font-size: 40px; /* Large size for the main page title 
-    color: var(--text-light);
-    font-weight: 700;
-}
-
-/* Main Content Section Styles 
-.main-article {
-    padding: 32px 16px;
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-.section-heading {
-    /* Size is different from header-title, but uses the same color palette
-    font-size: 28.8px;
-    color: var(--primary-color);
-    margin-bottom: 16px;
-}
-
-.feature-block-text {
-    /* Smaller text for feature descriptions /
-    font-size: 15.2px;
-    line-height: 1.5;
-}
-
-/* Footer Styles /
-.site-footer {
-    background-color: var(--background-dark);
-    color: var(--text-light);
-    padding: 32px 16px;
-    text-align: center;
-    font-size: 12.8px; /* Smallest size for copyright/utility links /
-}
-
-/* ----------------------------------------------------------------- /
-/* 4. Responsive Adjustments (Good Practice) /
-/* Adjust sizes for smaller screens /
-/* ----------------------------------------------------------------- /
-@media (max-width: 768px) {
-    /* Adjust base size for better reading on mobile /
-    :root {
-        --base-font-size: 15px;
-    }
-
-    .header-title {
-    font-size: 32px; /* Reduce header title size on smaller screens /
-    }
-
-    .section-heading {
-    font-size: 24px;
-    }
-}
-
-*/

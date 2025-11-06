@@ -7,6 +7,7 @@
         font-size: 64px;
         font-family: Poppins, sans-serif;
         text-align: center;
+        color: var(--text-dark);
     }
 
     .subline1 {
@@ -35,6 +36,7 @@
         margin-top: 30px;
         text-align: center;
         font-weight: 500;
+        color: var(--text-dark);
     }
 
     .button-spacing {
@@ -102,7 +104,7 @@
 .why-feature-list {
     list-style: none;
     padding: 0;
-    margin-top: 30px;
+    margin-top: 28px;
 }
 
 .why-feature-list li {
@@ -224,7 +226,7 @@
         </section>
 
         <div class="mt-10">
-            <h2 class="why-feature-title">Your message deserves to be heard!
+            <h2 class="why-feature-title text-center">Your message deserves to be heard!
                 Practice smarter, speak with confidence, and deliver with impact.</h2>
             <div class="button-spacing">
                 <div class="button">
@@ -236,7 +238,7 @@
 
     {{-- Fourth View --}}
 
-    <section class="min-h-screen pt-40 flex flex-col justify-center max-w-6xl mx-auto px-6 text-center">
+    <section class="min-h-screen pt-10 flex flex-col justify-center max-w-6xl mx-auto px-6 text-center">
         <h2 class="why-feature-title text-[30px] font-normal text-[var(--text-dark)] text-center font-[var(--base-font)] pb-20">
             "Good speakers inspire, lead, and connect. 
             Whether you're presenting at university, pitching a startup, or teaching others to communicate —
@@ -276,6 +278,41 @@
 
     {{--Fifth View --}}
 
-    
+    <section id="how-it-works" class="how-section min-h-screen pt-10 flex flex-col justify-center max-w-6xl mx-auto px-1 text-center">
+       <h2 class="section-title"> How it works? </h2>
+        <p class="subline2">
+                The Audience Reactor analyses your speech in real time — 
+                tracking pace, tone, clarity, volume, filler words, and emotional delivery. 
+                It then expresses reactions through facial expressions, colour, and sound, 
+                so you know exactly how your rehearsal is going. 
+        </p>
+        <div class="grid gap-8 md:grid-cols-2 pt-20 items-start text-left">
+          <!--- Coloumn -->
+            <div class="section-how">
+            <p class="font-bold text-4xl">Tracked speech parameters: </p>
+            <ul class="why-feature-list">
+                <li><strong>Pace:</strong> Are you speaking too fast or too slow?</li>
+                <li><strong>Tone:</strong> Is your voice engaging and varied?</li>
+                <li><strong>Clarity:</strong> Can your words be understood?</li>
+                <li><strong>Volume:</strong> Are you projecting your voice?</li>
+                <li><strong>Filler Words:</strong> Tracking "um," "uh," and other fillers</li>
+                <li><strong>Confidence:</strong> Measuring your emotional delivery</li>
 
+            </ul>
+            </div>
+
+            <!-- Card How -->
+            <div>
+                <p class="text-4xl text-[var(--text-dark)]">Visual Feedback:</p>
+
+                <div class="bg-white rounded-2xl shadow-sm p-6 border border-gray-100 hover:shadow-md transition-shadow mt-7">
+                    <span class="text-3xl text-green-500">“</span>
+                    <p class="text-[var(--text-grey)] mt-2 mb-4 leading-relaxed">
+                    As a startup founder, practicing my pitch with Audience Reactor made a huge difference. I landed my seed funding!
+                    </p>
+                    <p class="text-sm font-medium text-gray-500">— Startup Founder</p>
+                </div>
+            </div>
+        </div>
+    </section>
 </x-app-layout>
