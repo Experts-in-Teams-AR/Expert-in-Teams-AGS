@@ -6,7 +6,7 @@
     </x-slot>
     <div class="px-60 py-10">
         <div class="flex flex-col justify-center items-center border-4 border-black rounded-3xl mx-20 px-20 py-10 bg-gray-200" style="font-family: 'Poppins';">
-            <p class="text-8xl my-4">&#127760;</p>
+            <img src="{{ asset('images/5.svg') }}" alt="image" width="150" class="rounded-3xl mb-6">
             <p class="text-5xl"> Connect with your Audience Reactor </p> 
             <p class="text-3xl text-gray-500 my-4"> Enter the initial data to establish a connection </p>
 
