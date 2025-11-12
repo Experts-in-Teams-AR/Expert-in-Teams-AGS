@@ -10,7 +10,7 @@ use App\Http\Controllers\HistoryController;
 
 Route::get('/', function () {
     return auth()->check()
-        ? redirect()->route('session.setup')
+        ? redirect()->route('home')
         : redirect()->route('home');
 })->name('main');
 
@@ -41,6 +41,9 @@ Route::get('/setup', [SetupController::class, 'index'])->middleware(['auth'])->n
 Route::get('/setup-form', [SetupController::class, 'setupform'])->middleware(['auth'])->name('session.setupform');
 Route::post('/setup-form', [SetupController::class, 'setup'])->middleware(['auth'])->name('session.setupformpost');
 Route::get('/start', [StartController::class, 'index'])->middleware(['auth'])->name('session.start');
+Route::post('/start-setup', [StartController::class, 'info'])->middleware(['auth'])->name('session.startsetup');
+Route::get('/start-session', [StartController::class, 'start'])->middleware(['auth'])->name('session.startsession');
+Route::get('/stop-session', [StartController::class, 'stop'])->middleware(['auth'])->name('session.stopsession');
 Route::get('/results', [ResultController::class, 'index'])->middleware(['auth'])->name('session.results');
 
 Route::get('/tips', [TipsController::class, 'index'])->middleware(['auth'])->name('tips');

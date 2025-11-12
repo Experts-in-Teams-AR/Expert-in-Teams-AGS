@@ -248,7 +248,7 @@
 
         <div class="grid gap-8 md:grid-cols-3">
             <!-- Card 1 -->
-            <div class="bg-white rounded-2xl shadow-sm p-6 border border-gray-100 hover:shadow-md transition-shadow">
+            <div class="bg-[#EDF2F4] rounded-2xl shadow-sm p-6 border border-gray-100 hover:shadow-md transition-shadow">
             <span class="text-3xl text-green-500">“</span>
             <p class="text-[var(--text-grey)] mt-2 mb-4 leading-relaxed">
                 Audience Reactor helped me overcome my fear of public speaking. The real-time feedback gave me confidence I never had before.
@@ -257,7 +257,7 @@
             </div>
 
             <!-- Card 2 -->
-            <div class="bg-white rounded-2xl shadow-sm p-6 border border-gray-100 hover:shadow-md transition-shadow">
+            <div class="bg-[#EDF2F4] rounded-2xl shadow-sm p-6 border border-gray-100 hover:shadow-md transition-shadow">
             <span class="text-3xl text-green-500">“</span>
             <p class="text-[var(--text-grey)] mt-2 mb-4 leading-relaxed">
                 As a startup founder, practicing my pitch with Audience Reactor made a huge difference. I landed my seed funding!
@@ -266,7 +266,7 @@
             </div>
 
             <!-- Card 3 -->
-            <div class="bg-white rounded-2xl shadow-sm p-6 border border-gray-100 hover:shadow-md transition-shadow">
+            <div class="bg-[#EDF2F4] rounded-2xl shadow-sm p-6 border border-gray-100 hover:shadow-md transition-shadow">
             <span class="text-3xl text-green-500">“</span>
             <p class="text-[var(--text-grey)] mt-2 mb-4 leading-relaxed">
                 The judgment-free environment let me experiment and find my authentic speaking style. Game changer for educators.
@@ -305,31 +305,36 @@
             <div>
                 <p class="text-4xl text-[var(--text-dark)]">Visual Feedback:</p>
 
-                <div class="bg-white rounded-2xl shadow-sm p-6 border border-gray-100 hover:shadow-md transition-shadow mt-7">
-                     <ul class="space-y-4">
+                <div class="bg-[#EDF2F4] rounded-2xl shadow-sm p-6 border border-gray-100 hover:shadow-md transition-shadow mt-7">
+                    <ul class="space-y-4">
                         <li class="flex items-start">
-                            <img src="/images/speed.png" alt="Speed" class="w-6 h-6 mr-3 mt-1">
-                            <span><strong>Speed:</strong> How fast you’re speaking during your talk.</span>
-                            </li>
-                            <li class="flex items-start">
-                            <img src="/images/clarity.png" alt="Clarity" class="w-6 h-6 mr-3 mt-1">
-                            <span><strong>Clarity:</strong> How understandable your words are.</span>
-                            </li>
-                            <li class="flex items-start">
-                            <img src="/images/tone.png" alt="Tone" class="w-6 h-6 mr-3 mt-1">
-                            <span><strong>Tone:</strong> The emotional character of your voice.</span>
-                            </li>
-                            <li class="flex items-start">
-                            <img src="/images/volume.png" alt="Volume" class="w-6 h-6 mr-3 mt-1">
-                            <span><strong>Volume:</strong> The strength and projection of your speech.</span>
-                            </li>
-                            <li class="flex items-start">
-                            <img src="/images/fillers.png" alt="Filler words" class="w-6 h-6 mr-3 mt-1">
-                            <span><strong>Filler words:</strong> Detection of “uh”, “um”, and similar hesitations.</span>
-                            </li>
-                            <li class="flex items-start">
-                            <img src="/images/emotion.png" alt="Emotion" class="w-6 h-6 mr-3 mt-1">
-                            <span><strong>Emotion:</strong> The sentiment and expressiveness of your delivery.</span>
+                        <img src="/images/speed.png" alt="Speed" class="w-6 h-6 mr-3 mt-1">
+                        <span><strong>Speed:</strong> How fast you’re speaking during your talk.</span>
+                        </li>
+                        <li class="flex items-start">
+                        <img src="/images/clarity.png" alt="Clarity" class="w-6 h-6 mr-3 mt-1">
+                        <span><strong>Clarity:</strong> How understandable your words are.</span>
+                        </li>
+                        <li class="flex items-start">
+                        <img src="/images/tone.png" alt="Tone" class="w-6 h-6 mr-3 mt-1">
+                        <span><strong>Tone:</strong> The emotional character of your voice.</span>
+                        </li>
+                    </ul>
+
+                    <hr class="border-gray-300 my-6">
+
+                    <ul class="space-y-4">
+                        <li class="flex items-start">
+                        <img src="/images/volume.png" alt="Volume" class="w-6 h-6 mr-3 mt-1">
+                        <span><strong>Volume:</strong> The strength and projection of your speech.</span>
+                        </li>
+                        <li class="flex items-start">
+                        <img src="/images/fillers.png" alt="Filler words" class="w-6 h-6 mr-3 mt-1">
+                        <span><strong>Filler words:</strong> Detection of “uh”, “um”, and similar hesitations.</span>
+                        </li>
+                        <li class="flex items-start">
+                        <img src="/images/emotion.png" alt="Emotion" class="w-6 h-6 mr-3 mt-1">
+                        <span><strong>Emotion:</strong> The sentiment and expressiveness of your delivery.</span>
                         </li>
                     </ul>
                 </div>

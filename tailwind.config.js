@@ -17,5 +17,10 @@ export default {
         },
     },
 
+    corePlugins: {
+    preflight: true, // ensures Tailwind’s CSS reset is active
+    },
+
+
     plugins: [forms],
 };
