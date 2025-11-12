@@ -4,43 +4,53 @@
             @include('partials.navbar')
         </h1>
     </x-slot>
-    <div class="px-60 py-10">
-        <div class="flex flex-col justify-center items-center border-4 border-black rounded-3xl mx-20 px-15 pt-10 pb-5" style="font-family: 'Poppins';">
-            <p class="text-5xl"> Speaking Session </p> 
-            <p class="text-3xl text-gray-500 my-4"> Click start when you're ready. The Audience Reactor will analyze your speech in real-time. </p>
-            <img src="{{ asset('images/10.svg') }}" alt="image" width="170" class="rounded-3xl mt-20">
-            <div class="flex justify-center items-center bg-[#9EE493] rounded-3xl">
-                <p class="font-bold text-4xl"> • </p>
-                <p class="text-2xl"> RECORDING </p>
+    <div class="flex justify-center items-center min-h-[85vh] mt-10 px-6 md:px-20 lg:px-40" style="font-family: 'Poppins';">
+        <div class="w-full max-w-4xl bg-white rounded-3xl shadow-md p-8 md:p-12 text-center">
+            
+            {{-- Title --}}
+            <p class="text-2xl md:text-4xl mb-4 text-gray-800">Speaking Session</p>
+            <p class="text-base md:text-xl text-gray-500 mb-10">
+                Click start when you're ready. The Audience Reactor will analyze your speech in real-time.
+            </p>
+
+            <div class="relative inline-block mb-10">
+                <img src="{{ asset('images/10.svg') }}" alt="Recording Image" class="w-32 md:w-44 mx-auto rounded-3xl">
+                <div class="flex items-center justify-center gap-2 bg-[#9EE493] text-gray-800 font-semibold rounded-full px-4 py-1 shadow-sm">
+                    <span class="font-bold text-3xl">•</span>
+                    <span class="text-base md:text-lg tracking-wide">RECORDING</span>
+                </div>
             </div>
+
+            {{-- Timer --}}
             <div>
+                <p id="timer" class="text-2xl md:text-3xl mb-6"></p>
                 <script>
-                    let timeLeft = 10; // we  have to get here what user inserted now its hardcoded
-
+                    let timeLeft = 10; // we have to get here what user inserted now it's hardcoded
                     function startTimer() {
-                    const timerDisplay = document.getElementById('timer');
-                    const interval = setInterval(() => {
-                        timerDisplay.textContent = timeLeft + " seconds remaining";
-                        timeLeft--;
-
-                        if (timeLeft < 0) {
-                        clearInterval(interval);
-                        timerDisplay.textContent = "Time's up!";
-                        }
-                    }, 1000);
+                        const timerDisplay = document.getElementById('timer');
+                        const interval = setInterval(() => {
+                            timerDisplay.textContent = timeLeft > 0 
+                                ? `${timeLeft} seconds remaining`
+                                : "Time's up!";
+                            timeLeft--;
+                            if (timeLeft < 0) clearInterval(interval);
+                        }, 1000);
                     }
-
                     window.onload = startTimer;
                 </script>
-                <p id="timer" class="text-3xl mt-10 font-bold"></p> 
             </div>
 
-            <p class="text-center text-3xl mt-10"> Speak clearly and naturally </p>
+            {{-- Reminder Text --}}
+            <p class="text-xl md:text-2xl text-gray-800 mb-12">Speak clearly and naturally</p>
 
-            <div class="flex justify-center items-center mt-12 bg-[#344966] rounded-xl w-1/4 h-16 py-3 mb-10">
-                <img src="{{ asset('images/7.svg') }}" alt="image" class="rounded-xl w-10">
-                <a href="{{ route('session.stopsession') }}" class="text-4xl text-center text-white font-semibold"> Stop practice </a>
+            {{-- Stop Practice Button --}}
+            <div class="flex justify-center items-center gap-3 bg-[#344966] transition-colors rounded-xl w-full md:w-1/2 mx-auto h-16 mb-4">
+                <img src="{{ asset('images/7.svg') }}" alt="Stop Icon" class="w-8">
+                <a href="{{ route('session.stopsession') }}" class="text-xl md:text-2xl text-white font-semibold">
+                    Stop Practice
+                </a>
             </div>
+
         </div>
     </div>
 </x-app-layout>

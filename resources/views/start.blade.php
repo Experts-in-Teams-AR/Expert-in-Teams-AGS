@@ -4,71 +4,80 @@
             @include('partials.navbar')
         </h1>
     </x-slot>
-    <div class="px-60 py-10" style="font-family: 'Poppins';">
-            <div class="flex flex-col justify-center items-center">
-                <img src="{{ asset('images/7.svg') }}" alt="image" width="120" class="rounded-3xl">
-                <p class="text-5xl m-10"> Setup your practice session </p> 
-                <p class="text-3xl text-gray-500 mb-6"> Set your estimated practice time to help track your progress </p>
+     <div class="flex justify-center items-center min-h-[85vh] px-6 md:px-20 lg:px-40 mt-10" style="font-family: 'Poppins';">
+        <div class="w-full max-w-5xl bg-white rounded-3xl shadow-md p-8 md:p-12">
+            <div class="flex flex-col justify-center items-center text-center mb-10">
+                <img src="{{ asset('images/7.svg') }}" alt="image" class="w-24 mb-6">
+                <p class="text-2xl md:text-4xl font-semibold mb-4">Setup your practice session</p>
+                <p class="text-lg md:text-2xl text-gray-500">
+                    Set your estimated practice time to help track your progress
+                </p>
             </div>
-            <div class="">
-                <form action="{{ route('session.startsetup') }}" method="POST" class="w-full">
-                    @csrf
+            <form action="{{ route('session.startsetup') }}" method="POST" class="w-full">
+                @csrf
 
-                    <div class="flex space-x-4">
-                        <div class="w-1/2">
-                            <label for="minutes" class="text-2xl my-2 block font-bold"> Estimated Speech Duration (minutes) </label>
-                            <input type="text" id="minutes" name="minutes" class="rounded-xl bg-gray-100 w-full h-14 text-3xl mt-2" placeholder="Please insert minutes (e.g. 5)">
-                        </div>
-
-                        <div class="w-1/2">
-                            <label for="second" class="text-2xl my-2 block font-bold"> Estimated Speech Duration (seconds) </label>
-                            <input type="text" id="second" name="second" class="rounded-xl bg-gray-100 w-full h-14 text-3xl mt-2" placeholder="Please insert seconds (e.g. 30)">
-                        </div>
+                <div class="flex flex-col md:flex-row gap-8 mb-4">
+                    <div class="flex-1">
+                        <label for="minutes" class="block text-lg md:text-2xl font-semibold mb-2">
+                            Estimated Speech Duration (minutes)
+                        </label>
+                        <input type="text" id="minutes" name="minutes"
+                            class="rounded-xl bg-gray-100 w-full h-14 text-xl md:text-2xl px-4"
+                            placeholder="Please insert minutes (e.g. 5)">
                     </div>
 
+                    <div class="flex-1">
+                        <label for="second" class="block text-lg md:text-2xl font-semibold mb-2">
+                            Estimated Speech Duration (seconds)
+                        </label>
+                        <input type="text" id="second" name="second"
+                            class="rounded-xl bg-gray-100 w-full h-14 text-xl md:text-2xl px-4"
+                            placeholder="Please insert seconds (e.g. 30)">
+                    </div>
+                </div>
 
-                    <p class="text-2xl text-[#8D99AE] mt-4"> Recommended: at least one minute for best results </p> 
+                <p class="text-base md:text-xl text-[#8D99AE] mt-2 mb-10 text-center">
+                    Recommended: at least one minute for best results
+                </p>
+                <div class="mb-10">
+                    <p class="text-xl md:text-3xl font-semibold mb-4">What the Audience Reactor analyzes:</p>
 
-                    <div class="ml-16 mt-16">
-                        <p class="text-3xl "> What the Audience Reactor analyzes: </p>
-                        <div class="flex flex-col justify-start items-start">
-                            <div class="flex-none w-full">
-                                <div class="flex flex-cols justify-between">
-                                    <div class="flex justify-center items-center my-4">
-                                        <img src="{{ asset('images/13.svg') }}" alt="image" class="rounded-xl w-20 mr-3">
-                                        <div>
-                                            <p class="text-3xl"> Tone & Clarity </p>
-                                            <p class="text-2xl text-[#8D99AE]"> Voice quality and articulation </p>
-                                        </div>
-                                    </div>
-
-                                    <div class="flex justify-center items-center my-4 mr-60">
-                                        <img src="{{ asset('images/2.svg') }}" alt="image" class="rounded-xl w-20 mr-3">
-                                        <div>
-                                            <p class="text-3xl"> Pace & Rhythm </p>
-                                            <p class="text-2xl text-[#8D99AE]"> Speaking speed and pauses </p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="flex justify-center items-center my-4">
-                                <img src="{{ asset('images/11.svg') }}" alt="image" class="rounded-xl w-20 mr-3">
+                    <div class="space-y-6">
+                        <div class="flex flex-col md:flex-row justify-between gap-6">
+                            <div class="flex items-center">
+                                <img src="{{ asset('images/13.svg') }}" alt="image" class="w-16 mr-3">
                                 <div>
-                                    <p class="text-3xl"> Confidence Level </p>
-                                    <p class="text-2xl text-[#8D99AE]"> Vocal strength and energy </p>
+                                    <p class="text-lg md:text-2xl font-medium">Tone & Clarity</p>
+                                    <p class="text-base md:text-xl text-[#8D99AE]">Voice quality and articulation</p>
+                                </div>
+                            </div>
+
+                            <div class="flex items-center">
+                                <img src="{{ asset('images/2.svg') }}" alt="image" class="w-16 mr-3">
+                                <div>
+                                    <p class="text-lg md:text-2xl font-medium">Pace & Rhythm</p>
+                                    <p class="text-base md:text-xl text-[#8D99AE]">Speaking speed and pauses</p>
                                 </div>
                             </div>
                         </div>
-                    </div>
-
-                    <div class="flex flex-col justify-center items-center">
-                        <div class="flex justify-center items-center bg-[#9EE493] rounded-xl w-full mt-6 h-24 text-center">
-                            <img src="{{ asset('images/9.svg') }}" alt="image" class="rounded-xl w-10">
-                            <button type="submit" class="text-3xl rounded-xl">Start practice session now</button>
+                        <div class="flex items-center">
+                            <img src="{{ asset('images/11.svg') }}" alt="image" class="w-16 mr-3">
+                            <div>
+                                <p class="text-lg md:text-2xl font-medium">Confidence Level</p>
+                                <p class="text-base md:text-xl text-[#8D99AE]">Vocal strength and energy</p>
+                            </div>
                         </div>
                     </div>
-                </form>
-            </div>
+                </div>
+                <div class="flex justify-center">
+                    <button type="submit"
+                        class="flex items-center justify-center gap-3 bg-[#9EE493] hover:bg-[#7eda70] transition-colors rounded-xl w-full md:w-2/3 h-16 text-xl md:text-2xl font-medium text-gray-800">
+                        <img src="{{ asset('images/9.svg') }}" alt="image" class="w-8">
+                        Start practice session now
+                    </button>
+                </div>
+
+            </form>
+        </div>
     </div>
 </x-app-layout>
