@@ -25,12 +25,16 @@
             <div>
                 <p id="timer" class="text-2xl md:text-3xl mb-6"></p>
                 <script>
-                    let timeLeft = 10; // we have to get here what user inserted now it's hardcoded
+                    let timeLeft = 100; // we have to get here what user inserted now it's hardcoded
                     function startTimer() {
                         const timerDisplay = document.getElementById('timer');
                         const interval = setInterval(() => {
+                            let minutes = parseInt(timeLeft / 60, 10);
+                            let seconds = parseInt(timeLeft % 60, 10);
+                            minutes = minutes < 10 ? "0" + minutes : minutes;
+                            seconds = seconds < 10 ? "0" + seconds : seconds;
                             timerDisplay.textContent = timeLeft > 0 
-                                ? `${timeLeft} seconds remaining`
+                                ? `${minutes}:${seconds}`
                                 : "Time's up!";
                             timeLeft--;
                             if (timeLeft < 0) clearInterval(interval);
