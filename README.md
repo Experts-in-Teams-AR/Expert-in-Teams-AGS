@@ -1,61 +1,106 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+Installation steps:
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+    If there is no PHP installed (check with running "php -v" in cmd):
+        
+        1. Go to the official website php.net download the latest thread-safe version in zip format.
 
-## About Laravel
+        2. Extract the folder under C:\ directly. 
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+        3. Open the php.ini-development file from the extracted files, and enable the following extensions around line 940 by deleting the semi-colon from before the extension name then save it:
+         -curl
+         -fileinfo
+         -mbstring
+         -mysqli
+         -openssl
+         -pdo_mysql
+         -pdo_pgsql
+         -pdo_sqlite
+         -pgsql
+         -zip
+        
+        4. Rename the php.ini-development file which you just edited to php.ini
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+        5. You have to add the php path to the environment variables:
+         -Open "Edit the system environment variables" in control panel
+         -Click environment variables in the bottom
+         -Under system variables select "Path"
+         -Click on edit in the bottom
+         -Click new in the right panel on the top
+         -Copy the path of the php folder (should be C:\PHP) from the file manager
+         -Add it as new, then click ok for all popped up windows
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+         6. Check the PHP version with the command "php -v" in cmd, it should print out the version of php
+    
+    If there is no composer installed:
 
-## Learning Laravel
+        1. Enter the command "composer install" in cmd, it should install the latest version of composer and it might take a while.
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+        2. Check the version with the command "composer -v"
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+    If there in no PostgreSQL installed:
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+        1. Download the installer from the official website for your operating system. 
 
-## Laravel Sponsors
+        2. Run the installer as usual
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+        3. Choose an installation directory (default one is okay)
 
-### Premium Partners
+        4. Select PostgreSQL Server, pgAdmin4 and the command line tools for installation.
 
-- **[Vehikl](https://vehikl.com)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Redberry](https://redberry.international/laravel-development)**
-- **[Active Logic](https://activelogic.com)**
+        5. Choose directory where you data will be stored (default one is okay)
 
-## Contributing
+        6. Set superuser password, preferably one which is not personal and does not include "#", as it will be inserted to the .env file in laravel
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+        7. Choose a port (default one is fine "5432")
 
-## Code of Conduct
+        8. Complete the installation
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
 
-## Security Vulnerabilities
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+Configuration steps:
 
-## License
+    Create a new database which will be used for storing the data of the web-app:
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+        1. Open pgAdmin4 which you just installed
+
+        2. Open the "servers" tab on the left side and insert the superuser password which you gave at the installation
+
+        3. Right click on the server (PostgreSQL 17), then select create, then select database. 
+
+        4. In the Database field give a name for your database, then click "Save" at the bottom
+
+    Open a new terminal in VSCode and run the following command "composer install"
+
+    Then run "cp .env.example .env", this will create the .env file
+
+    Open the .env file and configure it:
+
+        1. Set DB_CONNECTION to pgsql
+
+        2. Set DB_HOST to 127.0.0.1
+
+        3. Set DB_PORT to 5432 or the one you set at installation
+
+        4. Set DB_DATABASE to the name of the database which you created at the previous step 
+
+        5. Set DB_USERNAME to postgres or the user you added at installation
+
+        6. Set DB_PASSWORD to the superuser password of PostgreSQL or the password which belongs to the user you set in step 5
+
+    In the VSCode terminal run "php artisan key:generate"
+
+    In the VSCode terminal run "php artisan migrate"
+
+    In the VSCode terminal run "npm install"
+
+    In the VSCode terminal run "npm run dev", this will start the Vite server
+
+
+
+Running the project: 
+
+    Finally run the project in the VSCode terminal with "php artisan serve", note that the Vite server needs to be also running every time you run the project
+
+    To open the web-app ctrl+click on the server address in the terminal
+
+    When you close the web-app stop both the Vite and the web-app server running in the terminal with ctrl+C 
