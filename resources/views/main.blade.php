@@ -1,283 +1,392 @@
-<!-- FULLY RESPONSIVE PROFESSIONAL REDESIGN (Option C) -->
-<!-- All px replaced with rem, responsive Tailwind breakpoints added, layout fixed for all screen sizes -->
-<!-- Visual design remains identical, but now scales perfectly on mobile, tablet, laptop, and ultrawide -->
-
 <link href="https://fonts.cdnfonts.com/css/poppins" rel="stylesheet">
 <link rel="stylesheet" href="{{ asset('css/apps.css') }}">
 
+
 <style>
-    :root {
+
+    :root{
+        --base-font: "Poppins", sans-serif;
+        --base-font-size: 1.19rem;
         --headline-size: 4rem;
-        --subline-large: 1.5rem;
-        --subline-medium: 1.3rem;
-        --content-size: 1.2rem;
-        --section-title-size: 3.5rem;
+        --subline-large: 1.75rem;
+        --subline-medium: 1.56rem;
+        --section-title-size: 3.37rem;
     }
 
     @media (max-width: 1024px) {
         :root {
-            --headline-size: 3rem;
-            --subline-large: 1.3rem;
-            --subline-medium: 1.15rem;
-            --section-title-size: 2.7rem;
+        --headline-size: 3rem;
+        --subline-large: 1.3rem;
+        --subline-medium: 1.15rem;
+        --section-title-size: 2.7rem;
+        }
+    }
+
+
+    @media (max-width: 640px) {
+        :root {
+        --headline-size: 2.2rem;
+        --subline-large: 1rem;
+        --subline-medium: 0.95rem;
+        --section-title-size: 2rem;
         }
     }
 
     @media (max-width: 640px) {
-        :root {
-            --headline-size: 2.2rem;
-            --subline-large: 1rem;
-            --subline-medium: 0.95rem;
-            --section-title-size: 2rem;
+    .button {
+            padding: 0.75rem 1.5rem;
+            font-size: 1.25rem;
+        }
+    }
+
+    @media (max-width: 640px) {
+    .spacing-section2,
+    .spacing-section3 {
+            min-height: auto;
+            padding: 4rem;
+        }
+    }
+
+    @media (max-width: 640px) {
+        .headline {
+            line-height: 1.2;
+        }
+        .content-text {
+            line-height: 1.5;
         }
     }
 
     .headline {
         font-size: var(--headline-size);
-        text-align: center;
         font-family: Poppins, sans-serif;
+        text-align: center;
         color: var(--text-dark);
         line-height: 1.1;
+
     }
 
     .subline1,
     .subline2 {
         text-align: center;
         font-family: Poppins, sans-serif;
-        margin-top: 1.5rem;
+        margin-top: 1.87rem;
+        font-weight: 400;
     }
 
     .subline1 { font-size: var(--subline-large); }
     .subline2 { font-size: var(--subline-medium); }
+    
 
     .button {
         background-color: #9EE493;
+        /*width: 30%;*/
         padding: 1rem 2rem;
         border-radius: 0.5rem;
-        font-size: 1.3rem;
+        font-size: 1.56rem;
         font-family: Poppins, sans-serif;
-        margin-top: 2rem;
+        margin-top: 1.87rem;
+        text-align: center;
         font-weight: 500;
         color: var(--text-dark);
+    }
+
+    .button-spacing {
+        display: flex;
+        justify-content: center;
     }
 
     .spacing-home {
-        max-width: 90rem;
-        margin: auto;
-        padding: 4rem 2rem;
-        text-align: center;
+        /*max-width: 90rem;*/
+        justify-content: center;
+        margin-top: 4.37rem;
+        padding: 0 5%;
+        /*min-height: 75vh;*/
     }
 
-    .section-title {
-        font-size: var(--section-title-size);
+    .section-title{
+        font-size: 3.37rem;
         font-family: Poppins, sans-serif;
         text-align: center;
-        margin-bottom: 2rem;
         color: var(--text-dark);
-        padding: 0 1rem;
+        padding:0 5%;
     }
 
-    .content-text {
-        font-size: var(--content-size);
+    .spacing-section2 {
+            justify-content: center;
+            padding: 0 5%;
+            min-height: auto;
+            padding-top: 2.5rem;
+        }
+
+    .content-text{
+        font-size: var(--base-font-size);
         font-family: Poppins, sans-serif;
-        margin-top: 1.5rem;
+        margin-top: 1.87rem;
         text-align: justify;
+        font-weight: 400;
     }
 
-    .why-feature-section { margin-top: 2rem; }
+    .spacing-section3 {
+            justify-content: center;
+            padding: 0 19%;
+                min-height: auto;
+                padding-top: 2.5rem;
+    }
+
+    .why-feature-section {
+    font-size: 1.19rem;
+        font-family: Poppins, sans-serif;
+        margin-top: 1.87rem;
+        text-align: justify;
+        font-weight: 400;
+    }
 
     .why-feature-title {
-        font-size: 1.6rem;
-        font-weight: 500;
+        font-size: 1.44rem;
+        font-weight: 400;
         color: var(--text-dark);
-        font-family: Poppins, sans-serif;
-        margin-bottom: 1rem;
+        text-align: left;
+        font-family: var(--base-font);
     }
 
-    .why-feature-list { margin-top: 1.5rem; padding-left: 0; }
+    .why-feature-list {
+        list-style: none;
+        padding: 0;
+        margin-top: 1.75rem;
+    }
+
     .why-feature-list li {
-        margin-bottom: 1rem;
-        padding-left: 2rem;
-        font-size: 1.2rem;
         position: relative;
+        padding-left: 2rem; /* space for the checkmark */
+        margin-bottom: 1rem;
+        font-size: 1.19rem;
+        font-family: var(--base-font);
+        text-align: justify;
+        font-weight: 400;
+        color: var(--text-grey);
+        line-height: 1.6;
     }
 
+    /* Green checkmark before each item */
     .why-feature-list li::before {
         content: "✓";
-        color: var(--button-bg);
         position: absolute;
         left: 0;
         top: 0;
-        font-size: 1.2rem;
-        font-weight: 700;
+        color: var(--button-bg);
+        font-weight: 600;
+        font-size: 1.19rem;
+        line-height: 1.2;
     }
+
+
+
 </style>
+
 
 <x-app-layout>
     <x-slot name="header">
-        @include('partials.navbar')
+        <h1 class="font-semibold text-xl text-gray-800 dark:text-gray-200 leading-tight">
+            @include('partials.navbar')
+        </h1>
     </x-slot>
-
-    <!-- HERO SECTION -->
-    <div class="spacing-home">
+    <div class="spacing-home min-h-[75vh] sm:min-h-screen md:min-h-[60vh] lg:min-h-[80vh]">
         <div class="headline">
             <p>Great speakers are made,</p>
             <p>not born</p>
         </div>
 
         <div class="subline1">
-            Find your voice and speak with confidence every single time.
+            <p>Find your voice and speak with confidence every single time.</p>
         </div>
 
         <div class="subline2 max-w-4xl mx-auto">
-            Practice with Audience Reactor – your personal, judgment-free audience that helps you improve every time you rehearse your speech.
+            <p>Practice with Audience Reactor – your personal, judgment-free audience that helps you improve every time you rehearse your speech.</p>
         </div>
 
-        <div class="flex justify-center mt-6">
-            <a class="button" href="{{ route('about.how') }}">&#9654; See how it works!</a>
+        <div class="button-spacing">
+            <div class="button mt-20">
+                <a href="{{ route('about.how') }}"> &#9654; See how it works! </a>
+            </div>
         </div>
     </div>
 
-    <!-- SECTION 2 -->
+    {{-- Second view --}}
 
-    <section class="max-w-6xl mx-auto px-6 py-20">
+    <div class = "spacing-section2">
+        <section id="what-is-it" class="what-section">
         <h2 class="section-title">A smarter way to practice your speaking skills.</h2>
+            <p class="subline2">
+                Audience Reactor listens, analyses, and reacts to your speech in real time just like a true audience would! 
+                It helps you improve your delivery, pacing, and confidence — without judgment.
+            </p>
+            <div class="cards grid gap-8 grid-cols-1 md:grid-cols-3 mt-20 text-center text-xl">
+                <div class="card">
+                    <div class="icon1 justify-center flex">
+                        <img src="/images/1.svg" width="100" height="100" alt="Speak icon" />
+                    </div>
+                    <h3 class="card-title1 mt-5 text-[var(--text-dark)] text-2xl">SPEAK</h3>
+                    <p class="card-text1 mt-5">Rehearse your speech in front of Audience Reactor</p>
+                </div>
 
-        <p class="subline2 max-w-3xl mx-auto">
-            Audience Reactor listens, analyses, and reacts to your speech in real time just like a true audience would!
-            It helps you improve your delivery, pacing, and confidence — without judgment.
-        </p>
+                <div class="card">
+                    <div class="icon2 justify-center flex">
+                        <img src="/images/2.svg" width="100" height="100" alt="React icon" />
+                    </div>
+                    <h3 class="card-title2 mt-5 text-[var(--text-dark)] text-2xl">REACT</h3>
+                    <p class="card-text2 mt-5">See feedback live and improve while speaking</p>
+                </div>
 
-        <div class="grid gap-12 md:grid-cols-3 mt-20 text-center">
-            <div>
-                <img src="/images/1.svg" class="w-24 h-24 mx-auto" />
-                <h3 class="text-2xl mt-5 text-[var(--text-dark)]">SPEAK</h3>
-                <p class="mt-4">Rehearse your speech in front of Audience Reactor.</p>
+                <div class="card">
+                    <div class="icon3 justify-center flex">
+                        <img src="/images/3.svg" width="100" height="100" alt="Improve icon" />
+                    </div>
+                    <h3 class="card-title3 mt-5 text-[var(--text-dark)] text-2xl">IMPROVE</h3>
+                    <p class="card-text3 mt-5">Review your speech and get performance insights</p>
+                </div>
             </div>
+        </section>
+    </div>
 
-            <div>
-                <img src="/images/2.svg" class="w-24 h-24 mx-auto" />
-                <h3 class="text-2xl mt-5 text-[var(--text-dark)]">REACT</h3>
-                <p class="mt-4">See feedback live and improve while speaking.</p>
-            </div>
+    {{-- Third view --}}
 
-            <div>
-                <img src="/images/3.svg" class="w-24 h-24 mx-auto" />
-                <h3 class="text-2xl mt-5 text-[var(--text-dark)]">IMPROVE</h3>
-                <p class="mt-4">Review your speech and get performance insights.</p>
-            </div>
-        </div>
-    </section>
+    <div class = "spacing-section3">
+        <section id="why-it-matters" class="why-section">
+        <h2 class="section-title">Why It Matters? </h2>
+            <p class="content-text">
+                Speaking with clarity and confidence can open doors and leave a lasting impression.
+                Yet most of us practice alone, unsure if our message truly reaches our audience, leaving us with stress and anxiety. 
+            </p>
+            <p class="content-text">   
+                Audience Reactor matters because it transforms practice into progress.
+                By showing how your audience responds in real time, it helps you improve faster, gain confidence, and speak with impact. 
+            </p>
+        </section>
 
-    <!-- SECTION 3 -->
-
-    <section class="max-w-5xl mx-auto px-6 py-20">
-
-        <h2 class="section-title">Why It Matters?</h2>
-
-        <p class="content-text">
-            Speaking with clarity and confidence can open doors and leave a lasting impression.
-            Yet most of us practice alone, unsure if our message truly reaches our audience.
-        </p>
-
-        <p class="content-text mt-6">
-            Audience Reactor transforms practice into progress — helping you improve faster, gain confidence, and speak with impact.
-        </p>
-
-        <div class="why-feature-section mt-12">
-            <h3 class="why-feature-title">With Audience Reactor, you can:</h3>
-
+        <section class="why-feature-section">
+            <h2 class="why-feature-title">With Audience Reactor, you can:</h2>
             <ul class="why-feature-list">
                 <li>Know what works and what doesn’t while you practice.</li>
                 <li>Refine your tone, pace, and clarity with improvement suggestions.</li>
                 <li>Build confidence so anxiety no longer holds you back.</li>
-                <li>Make every speech more engaging and effective.</li>
+                <li>Make every speech more engaging and effective, whether it's a work presentation, pitch, or class talk.</li>
             </ul>
-        </div>
+        </section>
 
-        <div class="mt-16 text-center">
-            <h3 class="text-3xl font-medium">
-                Your message deserves to be heard! Practice smarter, speak with confidence, and deliver with impact.
-            </h3>
-
-            <div class="mt-8 flex justify-center">
-                <a class="button" href="{{ route('profile') }}">Try Audience Reactor today! →</a>
+        <div class="mt-20">
+            <h2 class="why-feature-title text-center text-4xl">Your message deserves to be heard!
+                Practice smarter, speak with confidence, and deliver with impact.</h2>
+            <div class="button-spacing mt-10">
+                <div class="button">
+                    <a href="{{ route('profile') }}"> Try Audience Reactor today! &#8594 </a>
+                </div>
             </div>
         </div>
-    </section>
+    </div>
 
-    <!-- SECTION 4 Testimonials -->
+    {{-- Fourth View --}}
 
-    <section class="max-w-6xl mx-auto px-6 py-24 text-center">
-        <h2 class="text-3xl md:text-4xl text-[var(--text-dark)] font-medium leading-relaxed pb-16">
-            "Good speakers inspire, lead, and connect. Whether you're presenting at university, pitching a startup, or teaching others — great delivery makes all the difference."
+    <section class="h-auto lg:min-h-screen pt-10 flex flex-col justify-center max-w-6xl mx-auto px-6 text-center">
+        <h2 class="why-feature-title text-[1.87rem] font-normal text-[var(--text-dark)] text-center font-[var(--base-font)] pb-20">
+            "Good speakers inspire, lead, and connect. 
+            Whether you're presenting at university, pitching a startup, or teaching others to communicate —
+            great delivery makes all the difference. 
+            Audience Reactor helps you find your authentic voice, practice with purpose, and perform with confidence."
         </h2>
 
-        <div class="grid gap-10 md:grid-cols-3">
-            <div class="bg-[#EDF2F4] rounded-2xl p-8 shadow-sm border">
-                <span class="text-4xl text-green-500">“</span>
-                <p class="text-[var(--text-grey)] mt-4 mb-6">Audience Reactor helped me overcome my fear of public speaking.</p>
-                <p class="text-sm font-medium text-gray-500">— University Student</p>
+        <div class="grid gap-8 grid-cols-1 md:grid-cols-3">
+            <!-- Card 1 -->
+            <div class="bg-[#EDF2F4] rounded-2xl shadow-sm p-6 border border-gray-100 hover:shadow-md transition-shadow">
+            <span class="text-3xl text-green-500">“</span>
+            <p class="text-[var(--text-grey)] mt-2 mb-4 leading-relaxed">
+                Audience Reactor helped me overcome my fear of public speaking. The real-time feedback gave me confidence I never had before.
+            </p>
+            <p class="text-sm font-medium text-gray-500">— University Student</p>
             </div>
 
-            <div class="bg-[#EDF2F4] rounded-2xl p-8 shadow-sm border">
-                <span class="text-4xl text-green-500">“</span>
-                <p class="text-[var(--text-grey)] mt-4 mb-6">It made a huge difference in pitching my startup. I landed funding!</p>
-                <p class="text-sm font-medium text-gray-500">— Startup Founder</p>
+            <!-- Card 2 -->
+            <div class="bg-[#EDF2F4] rounded-2xl shadow-sm p-6 border border-gray-100 hover:shadow-md transition-shadow">
+            <span class="text-3xl text-green-500">“</span>
+            <p class="text-[var(--text-grey)] mt-2 mb-4 leading-relaxed">
+                As a startup founder, practicing my pitch with Audience Reactor made a huge difference. I landed my seed funding!
+            </p>
+            <p class="text-sm font-medium text-gray-500">— Startup Founder</p>
             </div>
 
-            <div class="bg-[#EDF2F4] rounded-2xl p-8 shadow-sm border">
-                <span class="text-4xl text-green-500">“</span>
-                <p class="text-[var(--text-grey)] mt-4 mb-6">The judgment-free environment helped me find my authentic style.</p>
-                <p class="text-sm font-medium text-gray-500">— Teacher</p>
+            <!-- Card 3 -->
+            <div class="bg-[#EDF2F4] rounded-2xl shadow-sm p-6 border border-gray-100 hover:shadow-md transition-shadow">
+            <span class="text-3xl text-green-500">“</span>
+            <p class="text-[var(--text-grey)] mt-2 mb-4 leading-relaxed">
+                The judgment-free environment let me experiment and find my authentic speaking style. Game changer for educators.
+            </p>
+            <p class="text-sm font-medium text-gray-500">— Teacher</p>
             </div>
         </div>
     </section>
 
-    <!-- SECTION 5 HOW IT WORKS -->
+    {{--Fifth View --}}
 
-    <section class="max-w-6xl mx-auto px-6 py-24 text-center">
-        <h2 class="section-title">How it works?</h2>
-
-        <p class="subline2 max-w-3xl mx-auto">
-            Audience Reactor analyses your speech in real time — tracking pace, tone, clarity, volume, filler words, and emotional delivery.
+    <section id="how-it-works" class="how-section h-auto lg:min-h-screen pt-10 flex flex-col justify-center max-w-6xl mx-auto px-5 text-center">
+       <h2 class="section-title"> How it works? </h2>
+        <p class="subline2">
+                The Audience Reactor analyses your speech in real time — 
+                tracking pace, tone, clarity, volume, filler words, and emotional delivery. 
+                It then expresses reactions through facial expressions, colour, and sound, 
+                so you know exactly how your rehearsal is going. 
         </p>
+        <div class="grid gap-8 grid-cols-1 md:grid-cols-2 pt-20 items-start text-left">
+          <!--- Coloumn -->
+            <div class="section-how">
+            <p class="font-bold text-4xl">Tracked speech parameters: </p>
+            <ul class="why-feature-list">
+                <li><strong>Pace:</strong> Are you speaking too fast or too slow?</li>
+                <li><strong>Tone:</strong> Is your voice engaging and varied?</li>
+                <li><strong>Clarity:</strong> Can your words be understood?</li>
+                <li><strong>Volume:</strong> Are you projecting your voice?</li>
+                <li><strong>Filler Words:</strong> Tracking "um," "uh," and other fillers</li>
+                <li><strong>Confidence:</strong> Measuring your emotional delivery</li>
 
-        <div class="grid gap-16 md:grid-cols-2 mt-20">
-
-            <div>
-                <p class="text-3xl font-semibold mb-6">Tracked speech parameters:</p>
-                <ul class="why-feature-list">
-                    <li><strong>Pace:</strong> Speaking speed analysis.</li>
-                    <li><strong>Tone:</strong> Voice emotional expression.</li>
-                    <li><strong>Clarity:</strong> Word understandability.</li>
-                    <li><strong>Volume:</strong> Projection level.</li>
-                    <li><strong>Filler Words:</strong> Detection of “uh”, “um”, etc.</li>
-                    <li><strong>Confidence:</strong> Emotional delivery strength.</li>
-                </ul>
+            </ul>
             </div>
 
+            <!-- Card How -->
             <div>
-                <p class="text-3xl font-semibold mb-6">Visual Feedback:</p>
+                <p class="text-4xl text-[var(--text-dark)]">Visual Feedback:</p>
 
-                <div class="bg-[#EDF2F4] p-8 rounded-2xl shadow-sm border">
-                    <ul class="space-y-4 text-left">
-                        <li class="flex items-start gap-3"><img class="w-7 h-7" src="/images/speed.png"><span><strong>Speed:</strong> How fast you're speaking.</span></li>
-                        <li class="flex items-start gap-3"><img class="w-7 h-7" src="/images/clarity.png"><span><strong>Clarity:</strong> How understandable your words are.</span></li>
-                        <li class="flex items-start gap-3"><img class="w-7 h-7" src="/images/tone.png"><span><strong>Tone:</strong> Emotional expression.</span></li>
+                <div class="bg-[#EDF2F4] rounded-2xl shadow-sm p-6 border border-gray-100 hover:shadow-md transition-shadow mt-7">
+                    <ul class="space-y-4">
+                        <li class="flex items-start">
+                        <img src="/images/speed.png" alt="Speed" class="w-6 h-6 mr-3 mt-1">
+                        <span><strong>Speed:</strong> How fast you’re speaking during your talk.</span>
+                        </li>
+                        <li class="flex items-start">
+                        <img src="/images/clarity.png" alt="Clarity" class="w-6 h-6 mr-3 mt-1">
+                        <span><strong>Clarity:</strong> How understandable your words are.</span>
+                        </li>
+                        <li class="flex items-start">
+                        <img src="/images/tone.png" alt="Tone" class="w-6 h-6 mr-3 mt-1">
+                        <span><strong>Tone:</strong> The emotional character of your voice.</span>
+                        </li>
                     </ul>
 
-                    <hr class="my-6">
+                    <hr class="border-gray-300 my-6">
 
-                    <ul class="space-y-4 text-left">
-                        <li class="flex items-start gap-3"><img class="w-7 h-7" src="/images/volume.png"><span><strong>Volume:</strong> Voice strength.</span></li>
-                        <li class="flex items-start gap-3"><img class="w-7 h-7" src="/images/fillers.png"><span><strong>Filler Words:</strong> Detection of hesitations.</span></li>
-                        <li class="flex items-start gap-3"><img class="w-7 h-7" src="/images/emotion.png"><span><strong>Emotion:</strong> Delivery sentiment.</span></li>
+                    <ul class="space-y-4">
+                        <li class="flex items-start">
+                        <img src="/images/volume.png" alt="Volume" class="w-6 h-6 mr-3 mt-1">
+                        <span><strong>Volume:</strong> The strength and projection of your speech.</span>
+                        </li>
+                        <li class="flex items-start">
+                        <img src="/images/fillers.png" alt="Filler words" class="w-6 h-6 mr-3 mt-1">
+                        <span><strong>Filler words:</strong> Detection of “uh”, “um”, and similar hesitations.</span>
+                        </li>
+                        <li class="flex items-start">
+                        <img src="/images/emotion.png" alt="Emotion" class="w-6 h-6 mr-3 mt-1">
+                        <span><strong>Emotion:</strong> The sentiment and expressiveness of your delivery.</span>
+                        </li>
                     </ul>
                 </div>
             </div>
-
         </div>
     </section>
-
 </x-app-layout>

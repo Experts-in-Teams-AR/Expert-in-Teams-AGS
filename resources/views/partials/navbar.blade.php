@@ -3,7 +3,7 @@
         list-style: none;
         display: flex;
         justify-content: left;
-        gap: 50px;
+        gap: 3.13rem;
         margin: 0;
         padding: 0;
     }
@@ -11,12 +11,12 @@
         position: relative; 
     }
     nav ul li a {
-    padding: 8px;
+    padding: 0.5rem;
         display: block;
     }
     nav ul li a:hover {
         background-color: lightgrey;
-        border-radius: 5px;
+        border-radius: 0.3rem;
     }
 
     .dropdown-menu {
@@ -26,15 +26,15 @@
         top: 100%;
         left: 0;
         list-style: none;
-    padding: 8px 0;
+    padding: 0.5rem 0;
         margin: 0;
-        border-radius: 4px;
-        min-width: 160px;
+        border-radius: 0.25rem;
+        min-width: 10rem;
         z-index: 100;
     }
 
     .dropdown-menu li a {
-    padding: 8px 16px;
+    padding: 0.5rem 1rem;
         display: block;
     }
 
@@ -49,8 +49,8 @@
     .nav-link.active {
         text-decoration: underline;
         text-decoration-color: #9EE493;
-        text-decoration-thickness: 4px;
-        text-underline-offset: 8px;
+        text-decoration-thickness: 0.25rem;
+        text-underline-offset: 0.5rem;
         font-weight: bold;
     }
 </style>
