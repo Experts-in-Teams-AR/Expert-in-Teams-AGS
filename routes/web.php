@@ -10,7 +10,7 @@ use App\Http\Controllers\HistoryController;
 
 Route::get('/', function () {
     return auth()->check()
-        ? redirect()->route('home')
+        ? redirect()->route('session.setup')
         : redirect()->route('home');
 })->name('main');
 
