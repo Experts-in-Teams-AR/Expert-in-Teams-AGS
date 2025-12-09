@@ -197,11 +197,12 @@
         </div>
 
         <div class="subline1">
-            <p>Find your voice and speak with confidence every single time.</p>
+            <p>Find your voice and speak with confidence - every time.</p>
         </div>
 
         <div class="subline2 max-w-4xl mx-auto">
-            <p>Practice with Audience Reactor – your personal, judgment-free audience that helps you improve every time you rehearse your speech.</p>
+            <p>Practice with Audience Reactor – your personal, judgment-free audience</p>
+            <p> that helps you improve every time you rehearse your speech.</p>
         </div>
 
         <div class="button-spacing">
@@ -217,8 +218,8 @@
         <section id="what-is-it" class="what-section">
         <h2 class="section-title">A smarter way to practice your speaking skills.</h2>
             <p class="subline2">
-                Audience Reactor listens, analyses, and reacts to your speech in real time just like a true audience would! 
-                It helps you improve your delivery, pacing, and confidence — without judgment.
+                Audience Reactor is an interactive robot that listens, analyses, and reacts to your speech just like a true audience would!  
+                It helps you improve your delivery, pacing, and confidence in a stress-free way.
             </p>
             <div class="cards grid gap-8 grid-cols-1 md:grid-cols-3 mt-20 text-center text-xl">
                 <div class="card">
@@ -254,12 +255,12 @@
         <section id="why-it-matters" class="why-section">
         <h2 class="section-title">Why It Matters? </h2>
             <p class="content-text">
-                Speaking with clarity and confidence can open doors and leave a lasting impression.
-                Yet most of us practice alone, unsure if our message truly reaches our audience, leaving us with stress and anxiety. 
-            </p>
+                Speaking clearly and confidently can open doors  in education, business, and everyday life. 
+                Yet most of us practice alone and rarely receive any meaningful feedback about how we sound. 
+                Without knowing what works and what doesn’t, we keep repeating the same habits, feel unsure about our delivery, and walk into presentations stressed and unprepared.            </p>
             <p class="content-text">   
-                Audience Reactor matters because it transforms practice into progress.
-                By showing how your audience responds in real time, it helps you improve faster, gain confidence, and speak with impact. 
+                Audience Reactor changes that. It turns practice into real progress by showing how your delivery is perceived while you rehearse. 
+                Instead of guessing, you get simple, supportive cues that help you adjust, improve, and build confidence step by step.
             </p>
         </section>
 
