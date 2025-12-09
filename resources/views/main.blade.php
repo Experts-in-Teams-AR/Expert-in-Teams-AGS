@@ -190,7 +190,7 @@
             @include('partials.navbar')
         </h1>
     </x-slot>
-    <div class="spacing-home min-h-[75vh] sm:min-h-screen md:min-h-[60vh] lg:min-h-[80vh]">
+    <div class="spacing-home min-h-[75vh] sm:min-h-screen md:min-h-[60vh] lg:min-h-[80vh] py-8">
         <div class="headline">
             <p>Great speakers are made,</p>
             <p>not born</p>
