@@ -64,38 +64,20 @@
                 <li><a href="{{ route('home') }}#what-is-it">What is Audiance Reactor?</a></li>
                 <li><a href="{{ route('home') }}#why-it-matters">Why it matters?</a></li>
                 <li><a href="{{ route('home') }}#how-it-works"> How it works?</a></li>
-                <li><a href="{{ route('home') }}">Meet our team!</a></li>
+                <li><a href="{{ route('home') }}">How to practice?</a></li>
             </ul>
         </li>
 
         <li class="dropdown">
-            <a href="{{ route('practice') }}" class="nav-link {{ Route::is('practice') ? 'active' : '' }}">PRACTICE</a>
+            <a href="{{ route('business') }}" class="nav-link {{ Route::is('business') ? 'active' : '' }}">FOR BUSINESS</a>
         </li>
 
         <li class="dropdown">
-            <a href="{{ route('resources') }}" class="nav-link {{ Route::is('resources*') ? 'active' : '' }}">RESOURCES</a>
-            <ul class="dropdown-menu">
-                <li><a href="{{ route('resources.blog') }}">Blog</a></li>
-                <li><a href="{{ route('resources.case') }}">Case studies</a></li>
-                <li><a href="{{ route('resources.research') }}">Research</a></li>
-                <li><a href="{{ route('resources.export') }}">Export data</a></li>
-            </ul>
-        </li>
-
-        <li class="dropdown">
-            <a href="{{ route('enterprise') }}" class="nav-link {{ Route::is('enterprise*') ? 'active' : '' }}">ENTERPRISE</a>
-            <ul class="dropdown-menu">
-                <li><a href="{{ route('enterprise.education') }}">For education</a></li>
-                <li><a href="{{ route('enterprise.business') }}">For business</a></li>
-            </ul>
+            <a href="{{ route('education') }}" class="nav-link {{ Route::is('education') ? 'active' : '' }}">FOR EDUCATION</a>
         </li>
 
          <li class="dropdown">
-            <a href="{{ route('pricing') }}" class="nav-link {{ Route::is('pricing') ? 'active' : '' }}">PRICING</a>
-        </li>
-
-         <li class="dropdown">
-            <a href="{{ route('faq') }}" class="nav-link {{ Route::is('faq') ? 'active' : '' }}">FAQ</a>
+            <a href="{{ route('team') }}" class="nav-link {{ Route::is('team') ? 'active' : '' }}">MEET OUR TEAM!</a>
         </li>
     </ul>
     @endguest
@@ -103,7 +85,7 @@
     @auth
     <ul>
         <li class="dropdown">
-            <a href="{{ route('session.setup') }}" class="nav-link {{ Route::is('session.*') ? 'active' : '' }}">START PRACTICE</a>
+            <a href="{{ route('session.start') }}" class="nav-link {{ Route::is('session.*') ? 'active' : '' }}">START PRACTICE</a>
         </li>
 
          <li class="dropdown">

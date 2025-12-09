@@ -5,6 +5,6 @@
         </h1>
     </x-slot>
     <div>
-        <p>Enterprise page display provided content here </p>
+        <p>Meeting the team </p>
     </div>
 </x-app-layout>

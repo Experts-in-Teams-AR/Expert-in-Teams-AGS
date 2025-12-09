@@ -31,15 +31,13 @@ class PagesTest extends TestCase
         $protectedRouteNames = [
             'dashboard',
             'profile',
-            'session.setup',
-            'session.setupform',
             'session.start',
             'session.startsession',
             'session.stopsession',
             'session.results',
             'tips',
             'history',
-            'resources.export',
+            #'resources.export',
         ];
 
         
@@ -57,15 +55,13 @@ class PagesTest extends TestCase
         $protectedRouteNames = [
             'dashboard',
             'profile',
-            'session.setup',
-            'session.setupform',
             'session.start',
             'session.startsession',
             'session.stopsession',
             'session.results',
             'tips',
             'history',
-            'resources.export',
+            #'resources.export',
         ];
 
         foreach ($protectedRouteNames as $name) {
@@ -78,7 +74,6 @@ class PagesTest extends TestCase
     public function post_routes_redirect_guests()
     {
         $postRoutes = [
-            'session.setupformpost',
             'session.startsetup',
         ];
 
@@ -94,7 +89,6 @@ class PagesTest extends TestCase
         $user = User::factory()->create();
 
         $postRoutes = [
-            'session.setupformpost',
             'session.startsetup',
         ];
 

@@ -5,6 +5,6 @@
         </h1>
     </x-slot>
     <div>
-        <p>Export page display provided content here </p>
+        <p>Exporting page to be used. </p>
     </div>
 </x-app-layout>
