@@ -173,7 +173,7 @@
         position: absolute;
         left: 0;
         top: 0;
-        color: var(--button-bg);
+        color: var(--button-bg, #9EE493);
         font-weight: 600;
         font-size: 1.19rem;
         line-height: 1.2;
@@ -330,63 +330,89 @@
     <section id="how-it-works" class="how-section h-auto lg:min-h-screen pt-10 flex flex-col justify-center max-w-6xl mx-auto px-5 text-center">
        <h2 class="section-title"> How it works? </h2>
         <p class="subline2">
-                The Audience Reactor analyses your speech in real time — 
-                tracking pace, tone, clarity, volume, filler words, and emotional delivery. 
-                It then expresses reactions through facial expressions, colour, and sound, 
-                so you know exactly how your rehearsal is going. 
+                Audience Reactor analyses short segments of your speech and reacts 
+                like a real listener using face expressions, colours, and movement to show how your delivery feels.
         </p>
         <div class="grid gap-8 grid-cols-1 md:grid-cols-2 pt-20 items-start text-left">
-          <!--- Coloumn -->
-            <div class="section-how">
-            <p class="font-bold text-4xl">Tracked speech parameters: </p>
-            <ul class="why-feature-list">
-                <li><strong>Pace:</strong> Are you speaking too fast or too slow?</li>
-                <li><strong>Tone:</strong> Is your voice engaging and varied?</li>
-                <li><strong>Clarity:</strong> Can your words be understood?</li>
-                <li><strong>Volume:</strong> Are you projecting your voice?</li>
-                <li><strong>Filler Words:</strong> Tracking "um," "uh," and other fillers</li>
-                <li><strong>Confidence:</strong> Measuring your emotional delivery</li>
-
-            </ul>
+            <!--- Card Why -->
+            <div class="bg-[#EDF2F4] rounded-2xl shadow-sm p-6 border border-gray-100 transition-shadow mt-7">
+                <p class="text-2xl">Tracked speech parameters: </p>
+                <ul class="why-feature-list">
+                    <li><strong>Pitch variability -</strong> how expressive or monotone you sound</li>
+                    <li><strong>Pitch level -</strong> is your voice too low or too high?</li>
+                    <li><strong>Pauses & pace -</strong> timing, rhythm, and clarity</li>
+                    <li><strong>Resonance (mouth openness) -</strong> articulation clarity</li>
+                    <li><strong>Energy -</strong> how strong or weak your voice feels</li>
+                </ul>
+                <hr class="border-gray-300 my-6">
+                    <ul class="space-y-4 pt-5">   
+                        <p class="text-2xl pt-5 text-[var(--text-dark)]">Natural reactions</p>
+                        <p class="text-xl pt-5">To make practice more realistic, the robot:</p>
+                        <ul class="space-y-4">
+                        <ul class="why-feature-list">
+                        <li>Follows your movement as you speak</li>
+                        <li>Nods when performance improves (Red → Yellow → Green)</li>
+                        <li>Tilts its head when quality slightly drops (Green → Yellow)</li>
+                    </ul>
             </div>
 
             <!-- Card How -->
             <div>
-                <p class="text-4xl text-[var(--text-dark)]">Visual Feedback:</p>
+                <div class="bg-[#EDF2F4] rounded-2xl shadow-sm p-6 border border-gray-100 transition-shadow mt-7">
+                    <p class="text-2xl text-[var(--text-dark)]">Visual Feedback</p>
+                        <p class="text-xl pt-5">Audience Reactor gives feedback through:</p>
+                        <p class="text-xl pt-5 text-[var(--text-dark)]">4 facial expressions</p>
 
-                <div class="bg-[#EDF2F4] rounded-2xl shadow-sm p-6 border border-gray-100 hover:shadow-md transition-shadow mt-7">
-                    <ul class="space-y-4">
-                        <li class="flex items-start">
-                        <img src="/images/speed.png" alt="Speed" class="w-6 h-6 mr-3 mt-1">
-                        <span><strong>Speed:</strong> How fast you’re speaking during your talk.</span>
-                        </li>
-                        <li class="flex items-start">
-                        <img src="/images/clarity.png" alt="Clarity" class="w-6 h-6 mr-3 mt-1">
-                        <span><strong>Clarity:</strong> How understandable your words are.</span>
-                        </li>
-                        <li class="flex items-start">
-                        <img src="/images/tone.png" alt="Tone" class="w-6 h-6 mr-3 mt-1">
-                        <span><strong>Tone:</strong> The emotional character of your voice.</span>
-                        </li>
-                    </ul>
+                        <ul class="space-y-4 pt-5">
+                            <li class="flex items-start">
+                            <img src="/images/speed.png" alt="Happy" class="w-6 h-6 mr-3 mt-1">
+                            <span><strong>Happy:</strong> Strong delivery</span>
+                            </li>
+                            <li class="flex items-start">
+                            <img src="/images/clarity.png" alt="Confused" class="w-6 h-6 mr-3 mt-1">
+                            <span><strong>Confused:</strong> Average clarity or rhythm</span>
+                            </li>
+                            <li class="flex items-start">
+                            <img src="/images/tone.png" alt="Sleepy" class="w-6 h-6 mr-3 mt-1">
+                            <span><strong>Sleepy:</strong> Too flat, quiet, or slow</span>
+                            </li>
+                            <li class="flex items-start">
+                            <img src="/images/volume.png" alt="Overwhelmed" class="w-6 h-6 mr-3 mt-1">
+                            <span><strong>Overwhelmed:</strong> Too fast, loud, or intense</span>
+                            </li>
+                        </ul>
 
                     <hr class="border-gray-300 my-6">
-
-                    <ul class="space-y-4">
+                    
+                    <p class="text-xl pt-5 text-[var(--text-dark)]">3 Body Colours</p>
+                    <ul class="space-y-4 pt-5">
                         <li class="flex items-start">
-                        <img src="/images/volume.png" alt="Volume" class="w-6 h-6 mr-3 mt-1">
-                        <span><strong>Volume:</strong> The strength and projection of your speech.</span>
+                        <img src="/images/volume.png" alt="Green" class="w-6 h-6 mr-3 mt-1">
+                        <span>Green — strong performance</span>
                         </li>
                         <li class="flex items-start">
-                        <img src="/images/fillers.png" alt="Filler words" class="w-6 h-6 mr-3 mt-1">
-                        <span><strong>Filler words:</strong> Detection of “uh”, “um”, and similar hesitations.</span>
+                        <img src="/images/fillers.png" alt="Yellow" class="w-6 h-6 mr-3 mt-1">
+                        <span>Yellow — moderate performance</span>
                         </li>
                         <li class="flex items-start">
-                        <img src="/images/emotion.png" alt="Emotion" class="w-6 h-6 mr-3 mt-1">
-                        <span><strong>Emotion:</strong> The sentiment and expressiveness of your delivery.</span>
+                        <img src="/images/emotion.png" alt="Red" class="w-6 h-6 mr-3 mt-1">
+                        <span>Red — needs improvement</span>
                         </li>
                     </ul>
                 </div>
+            </div>
+        
+            <!-- Card Bottom -->
+             <div class="bg-[#EDF2F4] rounded-2xl shadow-sm p-6 px-10 border border-gray-100 transition-shadow mt-7 md:col-span-2">
+                <ul class="space-y-4">   
+                        <p class="text-2xl text-[var(--text-dark)]">After your practice</p>
+                        <p class="text-xl">Once you finish, you can see on the website:</p>
+                        <ul class="space-y-4">
+                        <ul class="why-feature-list">
+                        <li>Your overall performance score</li>
+                        <li>A breakdown of each speech parameter</li>
+                        <li>Clear suggestions on what to improve</li>
+                    </ul>
             </div>
         </div>
     </section>
