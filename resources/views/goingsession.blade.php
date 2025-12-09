@@ -25,7 +25,7 @@
             <div>
                 <p id="timer" class="text-2xl md:text-3xl mb-6"></p>
                 <script>
-                    let timeLeft = 100; // we have to get here what user inserted now it's hardcoded
+                    let timeLeft = 10; // we have to get here what user inserted now it's hardcoded
                     function startTimer() {
                         const timerDisplay = document.getElementById('timer');
                         const interval = setInterval(() => {
