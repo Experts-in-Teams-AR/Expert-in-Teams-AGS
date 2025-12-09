@@ -34,8 +34,6 @@ Route::get('/start-session', [StartController::class, 'start'])->middleware(['au
 Route::get('/stop-session', [StartController::class, 'stop'])->middleware(['auth'])->name('session.stopsession');
 Route::get('/results', [ResultController::class, 'index'])->middleware(['auth'])->name('session.results');
 
-Route::post('/save-to-db', [ResultController::class, 'save']);
-
 Route::get('/tips', [TipsController::class, 'index'])->middleware(['auth'])->name('tips');
 
 Route::get('/history', [HistoryController::class, 'index'])->middleware(['auth'])->name('history');

@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Http;
+use App\Models\CategorizedValue;
 
 class StartController extends Controller
 {
@@ -19,8 +20,11 @@ class StartController extends Controller
 
         $duration=$minutes*60 + $seconds;
 
+        $user_id = auth()->id();
+
         $response = Http::post('http://127.0.0.1:5001/start-recording', [
-        'duration' => $duration
+        'duration' => $duration,
+        'user_id' => $user_id
         ]);
 
         return view('goingsession');
@@ -38,8 +42,8 @@ class StartController extends Controller
 
     public function stop()
     {
-        $user = auth()->user();
-        $values = $user->categorized_values;
+        $userId = auth()->id();
+        $values = CategorizedValue::where('user_id', $userId)->get();
 
         return view('result', ['values' => $values]);
     }

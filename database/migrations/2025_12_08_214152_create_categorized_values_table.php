@@ -13,12 +13,12 @@ return new class extends Migration
     {
         Schema::create('categorized_values', function (Blueprint $table) {
             $table->id();
-            $table->foreignId('user_id')->constrained()->onDelete('cascade'); // link to users
-            $table->integer('meanF0');
-            $table->integer('F0std');
-            $table->integer('meanF1');
-            $table->integer('H1minusA3');
-            $table->integer('pauseCount');
+            $table->foreignId('user_id')->nullable()->constrained()->onDelete('cascade'); // link to users
+            $table->string('meanF0');
+            $table->string('F0std');
+            $table->string('meanF1');
+            $table->string('H1minusA3');
+            $table->string('pauseCount');
             $table->timestamps();
         });
     }
