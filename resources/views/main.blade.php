@@ -201,8 +201,7 @@
         </div>
 
         <div class="subline2 max-w-4xl mx-auto">
-            <p>Practice with Audience Reactor – your personal, judgment-free audience</p>
-            <p> that helps you improve every time you rehearse your speech.</p>
+            <p>Practice with Audience Reactor – your personal, judgment-free audience that helps you improve every time you rehearse your speech.</p>
         </div>
 
         <div class="button-spacing">
@@ -214,7 +213,7 @@
 
     {{-- Second view --}}
 
-    <div class = "spacing-section2">
+    <div class = "spacing-section3">
         <section id="what-is-it" class="what-section">
         <h2 class="section-title">A smarter way to practice your speaking skills.</h2>
             <p class="subline2">
@@ -365,20 +364,37 @@
 
                         <ul class="space-y-4 pt-5">
                             <li class="flex items-start">
-                            <img src="/images/speed.png" alt="Happy" class="w-6 h-6 mr-3 mt-1">
-                            <span><strong>Happy:</strong> Strong delivery</span>
+                            <img src="/images/Happy.svg" alt="Happy" class="w-6 h-14 mr-3 mt-1">
+                            <span>Happy 
+                                <p class="mt-1 text-center text-xs text-gray-400">
+                                    Strong delivery
+                                </p>
+                            </span>
                             </li>
                             <li class="flex items-start">
-                            <img src="/images/clarity.png" alt="Confused" class="w-6 h-6 mr-3 mt-1">
-                            <span><strong>Confused:</strong> Average clarity or rhythm</span>
+                            <img src="/images/Confused.svg" alt="Confused" class="w-6 h-14 mr-3 mt-1">
+                            <span>Confused
+                                <p class="mt-1 text-center text-xs text-gray-400">
+                                    Average clarity or rhythm
+                                </p>
+                            </span>
                             </li>
                             <li class="flex items-start">
-                            <img src="/images/tone.png" alt="Sleepy" class="w-6 h-6 mr-3 mt-1">
-                            <span><strong>Sleepy:</strong> Too flat, quiet, or slow</span>
+                            <img src="/images/Sleepy.svg" alt="Sleepy" class="w-6 h-14 mr-3 mt-1">
+                            <span>Sleepy
+                                <p class="mt-1 text-center text-xs text-gray-400">
+                                    Too flat, quiet, or slow
+                                </p>
+                            </span>
                             </li>
                             <li class="flex items-start">
-                            <img src="/images/volume.png" alt="Overwhelmed" class="w-6 h-6 mr-3 mt-1">
-                            <span><strong>Overwhelmed:</strong> Too fast, loud, or intense</span>
+                            <img src="/images/Overwhelmed.svg" alt="Overwhelmed" class="w-6 h-14 mr-3 mt-1">
+                            <span>Overwhelmed
+                                <span>Overwhelmed
+                                <p class="mt-1 text-center text-xs text-gray-400">
+                                    Too fast, loud, or intense
+                                </p>
+                            </span>
                             </li>
                         </ul>
 
@@ -387,18 +403,19 @@
                     <p class="text-xl pt-5 text-[var(--text-dark)]">3 Body Colours</p>
                     <ul class="space-y-4 pt-5">
                         <li class="flex items-start">
-                        <img src="/images/volume.png" alt="Green" class="w-6 h-6 mr-3 mt-1">
+                        <img src="/images/Green.svg" alt="Green" class="w-6 h-6 mr-3 mt-1">
                         <span>Green — strong performance</span>
                         </li>
                         <li class="flex items-start">
-                        <img src="/images/fillers.png" alt="Yellow" class="w-6 h-6 mr-3 mt-1">
+                        <img src="/images/Yellow.svg" alt="Yellow" class="w-6 h-6 mr-3 mt-1">
                         <span>Yellow — moderate performance</span>
                         </li>
                         <li class="flex items-start">
-                        <img src="/images/emotion.png" alt="Red" class="w-6 h-6 mr-3 mt-1">
+                        <img src="/images/Red.svg" alt="Red" class="w-6 h-6 mr-3 mt-1">
                         <span>Red — needs improvement</span>
                         </li>
                     </ul>
+                    <p class="text-xl pt-5">The robot also highlights your weakest parameter so you know exactly what to adjust.</p>
                 </div>
             </div>
         
@@ -416,4 +433,84 @@
             </div>
         </div>
     </section>
+
+    {{--Sixth View --}}
+
+    <section id="practice" class="how-section h-auto lg:min-h-screen pt-10 flex flex-col justify-center max-w-6xl mx-auto px-5">
+       <h2 class="section-title"> How to practice? </h2>
+       <p class="subline2">
+                Rehearsing with Audience Reactor is simple. Just speak naturally and let the robot guide you.
+        </p>
+        <div class="max-w-xl mx-auto px-4 py-10">
+            <ol class="space-y-8">
+                <!-- Each step -->
+                <li class="flex items-start space-x-4">
+                <!-- Number circle -->
+                <div class="flex-shrink-0 w-12 h-12 rounded-full bg-[#344966] text-white flex items-center justify-center font-semibold">
+                    1
+                </div>
+                <!-- Text content -->
+                <div>
+                    <h3 class="text-lg font-semibold text-gray-900">Log in</h3>
+                    <p class="text-sm text-gray-500">Access your practice dashboard.</p>
+                </div>
+                </li>
+
+                <li class="flex items-start space-x-4">
+                <div class="flex-shrink-0 w-12 h-12 rounded-full bg-[#344966] text-white flex items-center justify-center font-semibold">
+                    2
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold text-gray-900">Start your session</h3>
+                    <p class="text-sm text-gray-500">Begin when you're ready to practice.</p>
+                </div>
+                </li>
+
+                <!-- Repeat for other items -->
+                <li class="flex items-start space-x-4">
+                <div class="flex-shrink-0 w-12 h-12 rounded-full bg-[#344966] text-white flex items-center justify-center font-semibold">
+                    3
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold text-gray-900">Present as you normally would</h3>
+                    <p class="text-sm text-gray-500">The robot listens and reacts through colours, facial expressions, and movement.</p>
+                </div>
+                </li>
+
+                <li class="flex items-start space-x-4">
+                <div class="flex-shrink-0 w-12 h-12 rounded-full bg-[#344966] text-white flex items-center justify-center font-semibold">
+                    4
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold text-gray-900">Watch the feedback while you speak</h3>
+                    <p class="text-sm text-gray-500">Its reactions help you adjust pacing, clarity, and expressiveness on the spot.</p>
+                </div>
+                </li>
+
+                <li class="flex items-start space-x-4">
+                <div class="flex-shrink-0 w-12 h-12 rounded-full bg-[#344966] text-white flex items-center justify-center font-semibold">
+                    5
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold text-gray-900">Check your results afterward</h3>
+                    <p class="text-sm text-gray-500">Get a clear summary of your performance and see what you can improve next.</p>
+                </div>
+                </li>
+            </ol>
+
+            <!-- Button -->
+            <!-- have to edit the route -->
+            <div class="button-spacing">
+                <div class="button">
+                    <a href="{{ route('profile') }}"> Start practicing today &#8594 </a> 
+                </div>
+            </div> 
+
+            <!-- Small note -->
+            <p class="mt-4 text-center text-xs text-gray-400">
+                Sign up for free and improve your speaking skills with real-time feedback
+            </p>
+        </div>
+    </section>
+
 </x-app-layout>

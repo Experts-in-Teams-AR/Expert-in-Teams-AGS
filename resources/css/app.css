@@ -21,30 +21,30 @@
     --subline-medium: 1.56rem;
     --section-title-size: 3.37rem;
 }
+@layer components {
+    body {
+        font-family: var(--base-font);
+        font-size: var(--base-font-size);
+        line-height: 1.6;
+        color: var(--text-grey); /* All text uses the dark text variable */
+        background-color: var(--background);
+        margin: 0;
+        padding: 0;
+    }
 
-body {
-    font-family: var(--base-font);
-    font-size: var(--base-font-size);
-    line-height: 1.6;
-    color: var(--text-grey); /* All text uses the dark text variable */
-    background-color: var(--background);
-    margin: 0;
-    padding: 0;
+    .site-header {
+        background-color: var(--background);
+        color: var(--text-grey); /* Override text color for dark background */
+        padding: 1.5rem 1rem;
+    }
+
+
+    .button:hover {
+        background-color: var(--button-bg-hover);
+    }
+
+
+    html {
+    scroll-behavior: smooth;
+    }
 }
-
-.site-header {
-    background-color: var(--background);
-    color: var(--text-grey); /* Override text color for dark background */
-    padding: 1.5rem 1rem;
-}
-
-
-.button:hover {
-    background-color: var(--button-bg-hover);
-}
-
-
-html {
-  scroll-behavior: smooth;
-}
-
