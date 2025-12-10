@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Http;
 use App\Models\CategorizedValue;
+use Illuminate\Support\Facades\Auth;
 
 class StartController extends Controller
 {
@@ -42,9 +43,11 @@ class StartController extends Controller
 
     public function stop()
     {
-        $userId = auth()->id();
-        $values = CategorizedValue::where('user_id', $userId)->get();
+        $user = Auth::user();
+        $sessions = CategorizedValue::where('user_id', $user->id)
+                        ->orderBy('created_at', 'desc')
+                        ->get();
 
-        return view('result', ['values' => $values]);
+        return view('result', compact('sessions'));
     }
 }

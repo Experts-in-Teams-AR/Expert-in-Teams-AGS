@@ -4,7 +4,12 @@
             @include('partials.navbar')
         </h1>
     </x-slot>
-    <div>
-        <p>Exporting page to be used. </p>
+    <div class="flex justify-center items-center">
+        <div class="mt-20">
+            <p class="text-center text-8xl font-bold">JSON opened in new tab.</p>
+        </div>
+        <script>
+            window.open("{{ url('/export-new') }}", "_blank");
+        </script>
     </div>
 </x-app-layout>

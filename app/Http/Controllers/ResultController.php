@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Http;
 use App\Models\CategorizedValue;
+use Illuminate\Support\Facades\Auth;
 
 class ResultController extends Controller
 {
@@ -30,5 +31,18 @@ class ResultController extends Controller
             'received' => $data,
             'user_id' => auth()->id(),
         ]);
+    }
+
+
+    public function show($id)
+    {
+        $session = CategorizedValue::findOrFail($id);
+
+        
+        if ($session->user_id !== Auth::id()) {
+            abort(403);
+        }
+
+        return view('chart', compact('session'));
     }
 }

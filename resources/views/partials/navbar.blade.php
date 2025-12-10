@@ -88,12 +88,16 @@
             <a href="{{ route('session.start') }}" class="nav-link {{ Route::is('session.*') ? 'active' : '' }}">START PRACTICE</a>
         </li>
 
-         <li class="dropdown">
+        <li class="dropdown">
             <a href="{{ route('tips') }}" class="nav-link {{ Route::is('tips') ? 'active' : '' }}">PRACTICE TIPS</a>
         </li>
 
-         <li class="dropdown">
-            <a href="{{ route('history') }}" class="nav-link {{ Route::is('history') ? 'active' : '' }}">VIEW PAST FEEDBACK</a>
+        <li class="dropdown">
+            <a href="{{ route('result.list') }}" class="nav-link {{ Route::is('result.list') ? 'active' : '' }}">VIEW PAST FEEDBACK</a>
+        </li>
+
+        <li class="dropdown">
+            <a href="{{ route('export') }}" class="nav-link {{ Route::is('export') ? 'active' : '' }}">EXPORT(JSON)</a>
         </li>
     </ul>
     @endauth 

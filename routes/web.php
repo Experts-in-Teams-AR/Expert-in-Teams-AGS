@@ -28,6 +28,11 @@ Route::view('business', 'business')->name('business');
 
 Route::view('team', 'team')->name('team');
 
+Route::middleware('auth')->group(function () {
+    Route::get('/result-list', [StartController::class, 'stop'])->name('result.list');
+    Route::get('/result/{id}', [ResultController::class, 'show'])->name('result.show');
+});
+
 Route::get('/start', [StartController::class, 'index'])->middleware(['auth'])->name('session.start');
 Route::post('/start-setup', [StartController::class, 'info'])->middleware(['auth'])->name('session.startsetup');
 Route::get('/start-session', [StartController::class, 'start'])->middleware(['auth'])->name('session.startsession');
@@ -39,6 +44,7 @@ Route::get('/tips', [TipsController::class, 'index'])->middleware(['auth'])->nam
 Route::get('/history', [HistoryController::class, 'index'])->middleware(['auth'])->name('history');
 
 Route::get('/export', [ExportController::class, 'index'])->middleware(['auth'])->name('export');
+Route::get('/export-new', [ExportController::class, 'export'])->middleware(['auth'])->name('export.new');
 
 Route::view('profile', 'profile')->middleware(['auth'])->name('profile');
 Route::view('dashboard', 'dashboard')->middleware(['auth'])->name('dashboard');
