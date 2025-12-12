@@ -206,7 +206,7 @@
 
         <div class="button-spacing">
             <div class="button mt-20">
-                <a href="{{ route('about.how') }}"> &#9654; See how it works! </a>
+                <a href="#how-it-works"> &#9654; See how it works! </a>
             </div>
         </div>
     </div>
@@ -221,7 +221,7 @@
                 It helps you improve your delivery, pacing, and confidence in a stress-free way.
             </p>
             <div class="cards grid gap-8 grid-cols-1 md:grid-cols-3 mt-20 text-center text-xl">
-                <div class="card">
+                <div class="card ">
                     <div class="icon1 justify-center flex">
                         <img src="/images/1.svg" width="100" height="100" alt="Speak icon" />
                     </div>
@@ -252,7 +252,7 @@
 
     <div class = "spacing-section3">
         <section id="why-it-matters" class="why-section">
-        <h2 class="section-title">Why It Matters? </h2>
+        <h2 class="section-title">Why it matters? </h2>
             <p class="content-text">
                 Speaking clearly and confidently can open doors  in education, business, and everyday life. 
                 Yet most of us practice alone and rarely receive any meaningful feedback about how we sound. 
@@ -278,7 +278,7 @@
                 Practice smarter, speak with confidence, and deliver with impact.</h2>
             <div class="button-spacing mt-10">
                 <div class="button">
-                    <a href="{{ route('profile') }}"> Try Audience Reactor today! &#8594 </a>
+                    <a href="{{ route('register') }}"> Try Audience Reactor today! &#8594 </a>
                 </div>
             </div>
         </div>
@@ -296,7 +296,7 @@
 
         <div class="grid gap-8 grid-cols-1 md:grid-cols-3">
             <!-- Card 1 -->
-            <div class="bg-[#EDF2F4] rounded-2xl shadow-sm p-6 border border-gray-100 hover:shadow-md transition-shadow">
+            <div class="bg-[#EDF2F4] rounded-2xl shadow-sm p-6 border border-black-100 hover:shadow-md transition-shadow">
             <span class="text-3xl text-green-500">“</span>
             <p class="text-[var(--text-grey)] mt-2 mb-4 leading-relaxed">
                 Audience Reactor helped me overcome my fear of public speaking. The real-time feedback gave me confidence I never had before.
@@ -305,7 +305,7 @@
             </div>
 
             <!-- Card 2 -->
-            <div class="bg-[#EDF2F4] rounded-2xl shadow-sm p-6 border border-gray-100 hover:shadow-md transition-shadow">
+            <div class="bg-[#EDF2F4] rounded-2xl shadow-sm p-6 border border-black-100 hover:shadow-md transition-shadow">
             <span class="text-3xl text-green-500">“</span>
             <p class="text-[var(--text-grey)] mt-2 mb-4 leading-relaxed">
                 As a startup founder, practicing my pitch with Audience Reactor made a huge difference. I landed my seed funding!
@@ -314,7 +314,7 @@
             </div>
 
             <!-- Card 3 -->
-            <div class="bg-[#EDF2F4] rounded-2xl shadow-sm p-6 border border-gray-100 hover:shadow-md transition-shadow">
+            <div class="bg-[#EDF2F4] rounded-2xl shadow-sm p-6 border border-black-100 hover:shadow-md transition-shadow">
             <span class="text-3xl text-green-500">“</span>
             <p class="text-[var(--text-grey)] mt-2 mb-4 leading-relaxed">
                 The judgment-free environment let me experiment and find my authentic speaking style. Game changer for educators.
@@ -334,7 +334,7 @@
         </p>
         <div class="grid gap-8 grid-cols-1 md:grid-cols-2 pt-20 items-start text-left">
             <!--- Card Why -->
-            <div class="bg-[#EDF2F4] rounded-2xl shadow-sm p-6 border border-gray-100 transition-shadow mt-7">
+            <div class="bg-[#EDF2F4] rounded-2xl shadow-sm p-6 border border-black-100 transition-shadow mt-7">
                 <p class="text-2xl">Tracked speech parameters: </p>
                 <ul class="why-feature-list">
                     <li><strong>Pitch variability -</strong> how expressive or monotone you sound</li>
@@ -344,11 +344,9 @@
                     <li><strong>Energy -</strong> how strong or weak your voice feels</li>
                 </ul>
                 <hr class="border-gray-300 my-6">
-                    <ul class="space-y-4 pt-5">   
-                        <p class="text-2xl pt-5 text-[var(--text-dark)]">Natural reactions</p>
-                        <p class="text-xl pt-5">To make practice more realistic, the robot:</p>
-                        <ul class="space-y-4">
-                        <ul class="why-feature-list">
+                    <p class="text-2xl pt-5 text-[var(--text-dark)]">🤖 Natural reactions</p>
+                    <p class="text-xl pt-5">To make practice more realistic, the robot:</p>
+                    <ul class="why-feature-list">
                         <li>Follows your movement as you speak</li>
                         <li>Nods when performance improves (Red → Yellow → Green)</li>
                         <li>Tilts its head when quality slightly drops (Green → Yellow)</li>
@@ -357,44 +355,39 @@
 
             <!-- Card How -->
             <div>
-                <div class="bg-[#EDF2F4] rounded-2xl shadow-sm p-6 border border-gray-100 transition-shadow mt-7">
+                <div class="bg-[#EDF2F4] rounded-2xl shadow-sm p-6 border border-black-100 transition-shadow mt-7">
                     <p class="text-2xl text-[var(--text-dark)]">Visual Feedback</p>
                         <p class="text-xl pt-5">Audience Reactor gives feedback through:</p>
                         <p class="text-xl pt-5 text-[var(--text-dark)]">4 facial expressions</p>
 
                         <ul class="space-y-4 pt-5">
-                            <li class="flex items-start">
-                            <img src="/images/Happy.svg" alt="Happy" class="w-6 h-14 mr-3 mt-1">
-                            <span>Happy 
-                                <p class="mt-1 text-center text-xs text-gray-400">
-                                    Strong delivery
-                                </p>
-                            </span>
+                            <li class="flex items-center">
+                                <span class="text-3xl mr-3">😊</span>
+                                <div class="flex flex-col leading-tight">
+                                    <span>Happy</span>
+                                    <p class="text-sm text-gray-400">Strong delivery</p>
+                                </div>
                             </li>
-                            <li class="flex items-start">
-                            <img src="/images/Confused.svg" alt="Confused" class="w-6 h-14 mr-3 mt-1">
-                            <span>Confused
-                                <p class="mt-1 text-center text-xs text-gray-400">
-                                    Average clarity or rhythm
-                                </p>
-                            </span>
+                            <li class="flex items-center">
+                                <span class="text-3xl mr-3">🤔</span>
+                                <div class="flex flex-col leading-tight">
+                                    <span>Confused</span>
+                                    <p class="text-sm text-gray-400">Average clarity or rhythm</p>
+                                </div>
                             </li>
-                            <li class="flex items-start">
-                            <img src="/images/Sleepy.svg" alt="Sleepy" class="w-6 h-14 mr-3 mt-1">
-                            <span>Sleepy
-                                <p class="mt-1 text-center text-xs text-gray-400">
-                                    Too flat, quiet, or slow
-                                </p>
-                            </span>
+                            <li class="flex items-center">
+                                <span class="text-3xl mr-3">😴</span>
+                                <div class="flex flex-col leading-tight">
+                                    <span>Sleepy</span>
+                                    <p class="text-sm text-gray-400">Too flat, quiet, or slow</p>
+                                </div>
                             </li>
-                            <li class="flex items-start">
-                            <img src="/images/Overwhelmed.svg" alt="Overwhelmed" class="w-6 h-14 mr-3 mt-1">
-                            <span>Overwhelmed
-                                <span>Overwhelmed
-                                <p class="mt-1 text-center text-xs text-gray-400">
-                                    Too fast, loud, or intense
-                                </p>
-                            </span>
+                            <li class="flex items-center">
+                                <span class="text-3xl mr-3">😰</span>
+                                <div class="flex flex-col leading-tight">
+                                    <span>Overwhelmed</span>
+                                    <p class="text-sm text-gray-400">Too fast, loud, or intense</p>
+                                </div>
                             </li>
                         </ul>
 
@@ -403,15 +396,15 @@
                     <p class="text-xl pt-5 text-[var(--text-dark)]">3 Body Colours</p>
                     <ul class="space-y-4 pt-5">
                         <li class="flex items-start">
-                        <img src="/images/Green.svg" alt="Green" class="w-6 h-6 mr-3 mt-1">
+                        <div class="flex-shrink-0 w-8 h-8 mr-3 mt-1 rounded-full bg-green-500"></div>
                         <span>Green — strong performance</span>
                         </li>
                         <li class="flex items-start">
-                        <img src="/images/Yellow.svg" alt="Yellow" class="w-6 h-6 mr-3 mt-1">
+                        <div class="flex-shrink-0 w-8 h-8 mr-3 mt-1 rounded-full bg-yellow-500"></div>
                         <span>Yellow — moderate performance</span>
                         </li>
                         <li class="flex items-start">
-                        <img src="/images/Red.svg" alt="Red" class="w-6 h-6 mr-3 mt-1">
+                        <div class="flex-shrink-0 w-8 h-8 mr-3 mt-1 rounded-full bg-red-500"></div>
                         <span>Red — needs improvement</span>
                         </li>
                     </ul>
@@ -420,16 +413,14 @@
             </div>
         
             <!-- Card Bottom -->
-             <div class="bg-[#EDF2F4] rounded-2xl shadow-sm p-6 px-10 border border-gray-100 transition-shadow mt-7 md:col-span-2">
-                <ul class="space-y-4">   
-                        <p class="text-2xl text-[var(--text-dark)]">After your practice</p>
-                        <p class="text-xl">Once you finish, you can see on the website:</p>
-                        <ul class="space-y-4">
-                        <ul class="why-feature-list">
-                        <li>Your overall performance score</li>
-                        <li>A breakdown of each speech parameter</li>
-                        <li>Clear suggestions on what to improve</li>
-                    </ul>
+             <div class="bg-[#EDF2F4] rounded-2xl shadow-sm p-6 px-10 border border-black-100 transition-shadow mt-7 md:col-span-2">
+                <p class="text-2xl text-[var(--text-dark)]">📊 After your practice</p>
+                <p class="text-xl pt-5">Once you finish, you can see on the website:</p>
+                <ul class="why-feature-list">
+                    <li>Your overall performance score</li>
+                    <li>A breakdown of each speech parameter</li>
+                    <li>Clear suggestions on what to improve</li>
+                </ul>
             </div>
         </div>
     </section>
@@ -439,7 +430,7 @@
     <section id="practice" class="how-section h-auto lg:min-h-screen pt-10 flex flex-col justify-center max-w-6xl mx-auto px-5">
        <h2 class="section-title"> How to practice? </h2>
        <p class="subline2">
-                Rehearsing with Audience Reactor is simple. Just speak naturally and let the robot guide you.
+            Rehearsing with Audience Reactor is simple. Just speak naturally and let the robot guide you.
         </p>
         <div class="max-w-xl mx-auto px-4 py-10">
             <ol class="space-y-8">
@@ -502,7 +493,7 @@
             <!-- have to edit the route -->
             <div class="button-spacing">
                 <div class="button">
-                    <a href="{{ route('profile') }}"> Start practicing today &#8594 </a> 
+                    <a href="{{ route('register') }}"> Start practicing today &#8594 </a> 
                 </div>
             </div> 
 
