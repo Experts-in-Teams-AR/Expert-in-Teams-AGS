@@ -330,7 +330,7 @@
        <h2 class="section-title"> How it works? </h2>
         <p class="subline2">
                 Audience Reactor analyses short segments of your speech and reacts 
-                like a real listener using face expressions, colours, and movement to show how your delivery feels.
+                like a real listener using face expressions, colours, light-up icons and movement to show how your delivery feels.
         </p>
         <div class="grid gap-8 grid-cols-1 md:grid-cols-2 pt-20 items-start text-left">
             <!--- Card Why -->
