@@ -9,29 +9,82 @@
     </x-slot>
     <div class="justify-center items-center min-h-[85vh] px-6 md:px-20 lg:px-40 mt-10" style="font-family: 'Poppins', sans-serif;">
         <div class="top-icon justify-center flex">
-                        <img src="/images/4.svg" width="100" height="100" alt="Top icon" />
+            <img src="/images/6.svg" width="100" height="100" alt="Top icon" />
         </div>
         <h1 class="text-4xl text-center h-auto leading-tight pt-2 justify-center max-w-6xl mx-auto text-[var(--text-dark)]"> Practice Tips
         </h1>
             <p class = "text-xl text-center justify-center max-w-6xl mx-auto pt-5"> 
-                Master the art of public speaking with our expert guidance</p>
+                Master the art of public speaking with our expert guidance
+            </p>
             
-                <div class="grid gap-8 grid-cols-1 md:grid-cols-2 pt-5 items-start text-left">
+                <div class="grid gap-8 grid-cols-1 md:grid-cols-2 pt-5 items-start text-left px-6">
                     
                     <div class="bg-[#EDF2F4] rounded-2xl shadow-sm p-6 px-10 border border-black-100 transition-shadow mt-7 md:col-span-2">
                         <ul class="space-y-4">   
-                                <p class="text-2xl text-[var(--text-dark)]">After your practice</p>
-                                <p class="text-xl">Once you finish, you can see on the website:</p>
-                                <ul class="space-y-4">
-                                <ul class="why-feature-list">
-                                <li>Your overall performance score</li>
-                                <li>A breakdown of each speech parameter</li>
-                                <li>Clear suggestions on what to improve</li>
-                            </ul>
+                            <li class="flex items-start">
+                            <img src="/images/13.svg" alt="Bulb" class="w-6 h-6 mr-3 mt-1">
+                            <span class="text-xl text-[var(--text-dark)]">Essential Practice Guidelines
+                            </span>
+                            </li>
+                        </ul>
+                        <p class="text-xl text-gray-400">Follow these core principles for every practice session</p>
+                        
+                        <div class="grid grid-cols-1 pt-10 gap-5">
+                            <div class="bg-white rounded-lg p-6">
+                                <ul class="space-y-4">   
+                                    <li class="flex items-start">
+                                    <img src="/images/14.svg" alt="Check" class="w-5 h-5 mr-3 mt-1">
+                                    <span>
+                                    <p class="text-xl text-[var(--text-dark)]">Choose a quiet environment</p>
+                                    <p class="text-lg pt-1">Minimize background noise and distractions.
+                                     A quiet space allows the Audience Reactor to accurately analyze your speech patterns.</p>
+                                    </span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="bg-white rounded-lg p-6">
+                                <ul class="space-y-4">   
+                                    <li class="flex items-start">
+                                    <img src="/images/14.svg" alt="Check" class="w-5 h-5 mr-3 mt-1">
+                                    <span>
+                                    <p class="text-xl text-[var(--text-dark)]">Practice for 2-3 minutes minimum</p>
+                                    <p class="text-lg pt-1">Shorter sessions may not provide enough data for meaningful analysis. 
+                                    Aim for at least 2-3 minutes per practice session.</p>
+                                    </span>
+                                    </li>
+                                </ul>
+                                
+                            </div>
+                            <div class="bg-white rounded-lg p-6">
+                                <ul class="space-y-4">   
+                                    <li class="flex items-start">
+                                    <img src="/images/14.svg" alt="Check" class="w-5 h-5 mr-3 mt-1">
+                                    <span>
+                                    <p class="text-xl text-[var(--text-dark)]">Speak naturally and confidently</p>
+                                    <p class="text-lg pt-1">Don't overthink it. Speak as you would to a real audience. 
+                                    Authenticity is key to improvement.</p>
+                                    </span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="bg-white rounded-lg p-6">
+                                <ul class="space-y-4">   
+                                    <li class="flex items-start">
+                                    <img src="/images/14.svg" alt="Check" class="w-5 h-5 mr-3 mt-1">
+                                    <span>
+                                    <p class="text-xl text-[var(--text-dark)]">Review feedback after each session</p>
+                                    <p class="text-lg pt-1">Take time to understand the feedback and identify areas for improvement. 
+                                    Progress comes from consistent review and adjustment.</p>
+                                    </span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
 
                     <!--- Card Why -->
                     <div class="bg-[#EDF2F4] rounded-2xl shadow-sm p-6 border border-black-100 transition-shadow">
+                        <img src="/images/8.svg" alt="Mic" class="w-12 h-12 mr-3 mt-1 mb-4">
                         <p class="text-xl">Voice Quality </p>
                         <p class="text-xl text-gray-400"> Optimize your vocal delivery</p>
                         <ul class="list-disc marker:text-[#9EE493] pl-5 pt-5 space-y-2">
@@ -43,6 +96,7 @@
                     </div>
 
                     <div class="bg-[#EDF2F4] rounded-2xl shadow-sm p-6 border border-black-100 transition-shadow">
+                        <img src="/images/7.svg" alt="Clock" class="w-12 h-12 mr-3 mt-1 mb-4">
                         <p class="text-xl">Pacing & Rythm </p>
                         <p class="text-xl text-gray-400"> Control your speaking tempo</p>
                         <ul class="list-disc marker:text-[#9EE493] pl-5 pt-5 space-y-2">
@@ -55,6 +109,7 @@
 
                     <!-- Card How -->
                    <div class="bg-[#EDF2F4] rounded-2xl shadow-sm p-6 border border-black-100 transition-shadow">
+                        <img src="/images/3.svg" alt="Speaker" class="w-12 h-12 mr-3 mt-1 mb-4">
                         <p class="text-xl">Confidence Building </p>
                         <p class="text-xl text-gray-400"> Project authority and presence</p>
                         <ul class="list-disc marker:text-[#9EE493] pl-5 pt-5 space-y-2">
@@ -66,6 +121,7 @@
                     </div>
 
                     <div class="bg-[#EDF2F4] rounded-2xl shadow-sm p-6 border border-black-100 transition-shadow">
+                        <img src="/images/11.svg" alt="Improvement" class="w-12 h-12 mr-3 mt-1 mb-4">
                         <p class="text-xl">Continuous Improvement </p>
                         <p class="text-xl text-gray-400"> Track and enhance your skills</p>
                         <ul class="list-disc marker:text-[#9EE493] pl-5 pt-5 space-y-2">
