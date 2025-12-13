@@ -155,14 +155,14 @@
     }
 
     .spacing-section3 {
-            justify-content: center;
-            padding: 0 19%;
-                min-height: auto;
-                padding-top: 2.5rem;
+        justify-content: center;
+        padding: 0 19%;
+        min-height: auto;
+        padding-top: 2.5rem;
     }
 
     .why-feature-section {
-    font-size: 1.19rem;
+        font-size: 1.19rem;
         font-family: Poppins, sans-serif;
         margin-top: 1.87rem;
         text-align: justify;
@@ -315,8 +315,7 @@
     {{-- Fourth View --}}
 
     <section class="h-auto lg:min-h-screen pt-10 flex flex-col justify-center max-w-6xl mx-auto px-6 text-center">
-        <h2 class="why-feature-title text-[1.87rem] font-normal text-[var(--text-dark)] text-center font-[var(--base-font)] pb-20">
-            "Good speakers inspire, lead, and connect. 
+        <h2 class="text-center text-[1.87rem] md:text-[1.87rem] font-normal text-[var(--text-dark)] font-[Poppins] pb-20">            "Good speakers inspire, lead, and connect. 
             Whether you're presenting at university, pitching a startup, or teaching others to communicate —
             great delivery makes all the difference. 
             Audience Reactor helps you find your authentic voice, practice with purpose, and perform with confidence."
