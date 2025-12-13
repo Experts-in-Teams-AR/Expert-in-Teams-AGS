@@ -1,14 +1,16 @@
+<link rel="stylesheet" href="{{ asset('css/apps.css') }}">
+
 <x-app-layout>
     <x-slot name="header">
-        <h1 class="font-semibold text-xl text-gray-800 dark:text-gray-200 leading-tight">
+        <h1 class="font-medium text-xl text-gray-800 dark:text-gray-200 leading-tight">
             @include('partials.navbar')
         </h1>
     </x-slot>
      <div class="flex justify-center items-center min-h-[85vh] px-6 md:px-20 lg:px-40 mt-10" style="font-family: 'Poppins';">
-        <div class="w-full max-w-5xl bg-white border border-gray-500 rounded-3xl shadow-md p-8 md:p-12">
+        <div class="w-full max-w-5xl bg-white border border-gray-500 text-[var(--text-dark)] rounded-3xl shadow-md p-8 md:p-12">
             <div class="flex flex-col justify-center items-center text-center mb-10">
                 <img src="{{ asset('images/7.svg') }}" alt="image" class="w-24 mb-6">
-                <p class="text-2xl md:text-4xl font-semibold mb-4">Setup your practice session</p>
+                <p class="text-2xl md:text-4xl font-medium mb-4">Setup your practice session</p>
                 <p class="text-lg md:text-2xl text-gray-500">
                     Set your estimated practice time to help track your progress
                 </p>
@@ -18,7 +20,7 @@
 
                 <div class="flex flex-col md:flex-row gap-8 mb-4">
                     <div class="flex-1">
-                        <label for="minutes" class="block text-lg md:text-2xl font-semibold mb-2">
+                        <label for="minutes" class="block text-lg md:text-2xl font-medium mb-2">
                             Estimated Speech Duration (minutes)
                         </label>
                         <input type="text" id="minutes" name="minutes"
@@ -27,7 +29,7 @@
                     </div>
 
                     <div class="flex-1">
-                        <label for="second" class="block text-lg md:text-2xl font-semibold mb-2">
+                        <label for="second" class="block text-lg md:text-2xl font-medium mb-2">
                             Estimated Speech Duration (seconds)
                         </label>
                         <input type="text" id="second" name="second"
@@ -40,7 +42,7 @@
                     Recommended: at least one minute for best results
                 </p>
                 <div class="mb-10">
-                    <p class="text-xl md:text-3xl font-semibold mb-4">What the Audience Reactor analyzes:</p>
+                    <p class="text-xl md:text-2xl font-medium mb-4">What the Audience Reactor analyzes:</p>
 
                     <div class="space-y-6">
                         <div class="flex flex-col md:flex-row justify-between gap-6">

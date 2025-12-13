@@ -16,6 +16,10 @@
         margin: 3px 0;
         transition: 0.3s;
     }
+
+    nav {
+        font-family: 'Poppins', sans-serif;
+    }
     
     /* Desktop */
     nav ul {
@@ -65,7 +69,7 @@
         text-decoration-color: #9EE493;
         text-decoration-thickness: 0.25rem;
         text-underline-offset: 0.5rem;
-        font-weight: bold;
+        font-weight: 500;
     }
     
     /* Mobile */

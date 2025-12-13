@@ -1,5 +1,34 @@
-<link href="https://fonts.cdnfonts.com/css/poppins" rel="stylesheet">
 <link rel="stylesheet" href="{{ asset('css/apps.css') }}">
+
+<style>
+@font-face {
+    font-family: 'Poppins';
+    src: url('/fonts/Poppins-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('/fonts/Poppins-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('/fonts/Poppins-Semibold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('/fonts/Poppins-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+</style>
 
 <x-app-layout>
     <x-slot name="header">
@@ -85,7 +114,7 @@
                     <!--- Card Why -->
                     <div class="bg-[#EDF2F4] rounded-2xl shadow-sm p-6 border border-black-100 transition-shadow">
                         <img src="/images/8.svg" alt="Mic" class="w-12 h-12 mr-3 mt-1 mb-4">
-                        <p class="text-xl">Voice Quality </p>
+                        <p class="text-xl text-[var(--text-dark)]">Voice Quality </p>
                         <p class="text-xl text-gray-400"> Optimize your vocal delivery</p>
                         <ul class="list-disc marker:text-[#9EE493] pl-5 pt-5 space-y-2">
                             <li>Warm up your voice before practicing</li>
@@ -97,7 +126,7 @@
 
                     <div class="bg-[#EDF2F4] rounded-2xl shadow-sm p-6 border border-black-100 transition-shadow">
                         <img src="/images/7.svg" alt="Clock" class="w-12 h-12 mr-3 mt-1 mb-4">
-                        <p class="text-xl">Pacing & Rythm </p>
+                        <p class="text-xl text-[var(--text-dark)]">Pacing & Rythm </p>
                         <p class="text-xl text-gray-400"> Control your speaking tempo</p>
                         <ul class="list-disc marker:text-[#9EE493] pl-5 pt-5 space-y-2">
                             <li>Speak at a moderate, steady pace</li>
@@ -110,7 +139,7 @@
                     <!-- Card How -->
                    <div class="bg-[#EDF2F4] rounded-2xl shadow-sm p-6 border border-black-100 transition-shadow">
                         <img src="/images/3.svg" alt="Speaker" class="w-12 h-12 mr-3 mt-1 mb-4">
-                        <p class="text-xl">Confidence Building </p>
+                        <p class="text-xl text-[var(--text-dark)]">Confidence Building </p>
                         <p class="text-xl text-gray-400"> Project authority and presence</p>
                         <ul class="list-disc marker:text-[#9EE493] pl-5 pt-5 space-y-2">
                             <li>Stand or sit with good posture</li>
@@ -122,7 +151,7 @@
 
                     <div class="bg-[#EDF2F4] rounded-2xl shadow-sm p-6 border border-black-100 transition-shadow">
                         <img src="/images/11.svg" alt="Improvement" class="w-12 h-12 mr-3 mt-1 mb-4">
-                        <p class="text-xl">Continuous Improvement </p>
+                        <p class="text-xl text-[var(--text-dark)]">Continuous Improvement </p>
                         <p class="text-xl text-gray-400"> Track and enhance your skills</p>
                         <ul class="list-disc marker:text-[#9EE493] pl-5 pt-5 space-y-2">
                             <li>Set specific goals for each session</li>
@@ -136,31 +165,31 @@
                     <div class="bg-[#EDF2F4] rounded-2xl shadow-sm p-6 px-10 border border-black-100 transition-shadow md:col-span-2"> 
                         <li class="flex items-start">
                             <img src="/images/15.svg" alt="Exclamation" class="w-6 h-6 mr-3 mt-1">
-                            <span class="text-xl">Common Mistakes to Avoid </span>
+                            <span class="text-xl text-[var(--text-dark)]">Common Mistakes to Avoid </span>
                         </li>
                         <p class="text-xl text-gray-400 pt-2"> Watch out for these pitfalls that can hinder your progress</p>
                         <ul class="pt-5">
                             <li class="flex items-start">
                             <img src="/images/16.svg" alt="Cross" class="w-6 h-6 mr-3 mt-1">
-                                <span>Practicing in noisy environments
+                                <span class = "text-[var(--text-dark)]">Practicing in noisy environments
                                     <p class="text-sm text-gray-400">Background noise can affect analysis accuracy</p>
                                 </span>
                             </li>
                             <li class="flex items-start">
                             <img src="/images/16.svg" alt="Cross" class="w-6 h-6 mr-3 mt-1">
-                                <span>Ignoring feedback patterns
+                                <span class = "text-[var(--text-dark)]">Ignoring feedback patterns
                                     <p class="text-sm text-gray-400">Repeated suggestions indicate areas needing attention</p>
                                 </span>
                             </li>
                             <li class="flex items-start">
                             <img src="/images/16.svg" alt="Cross" class="w-6 h-6 mr-3 mt-1">
-                                <span>Rushing through sessions
+                                <span class = "text-[var(--text-dark)]">Rushing through sessions
                                     <p class="text-sm text-gray-400">Quality over quantity leads to better results</p>
                                 </span>
                             </li>
                             <li class="flex items-start">
                             <img src="/images/16.svg" alt="Cross" class="w-6 h-6 mr-3 mt-1">
-                                <span>Not applying insights to real situations
+                                <span class = "text-[var(--text-dark)]">Not applying insights to real situations
                                     <p class="text-sm text-gray-400">Practice should translate to real-world improvement</p>
                                 </span>
                             </li>

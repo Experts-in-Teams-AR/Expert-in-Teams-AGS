@@ -19,7 +19,7 @@
             @include('partials.navbar')
         </h1>
     </x-slot>
-    <div class="font-poppins p-6">
+    <div class="font-Poppins p-6">
         <h2 class="text-4xl font-bold text-center mb-5">My Sessions</h2>
 
         @foreach($sessions as $session)
