@@ -6,7 +6,7 @@
             @include('partials.navbar')
         </h1>
     </x-slot>
-     <div class="flex justify-center items-center min-h-[85vh] px-6 md:px-20 lg:px-40 mt-10" style="font-family: 'Poppins';">
+     <div class="flex justify-center items-center min-h-[85vh] px-6 md:px-20 lg:px-40 mt-10"> <!--style="font-family: 'Poppins';"-->
         <div class="w-full max-w-5xl bg-white border border-gray-500 text-[var(--text-dark)] rounded-3xl shadow-md p-8 md:p-12">
             <div class="flex flex-col justify-center items-center text-center mb-10">
                 <img src="{{ asset('images/7.svg') }}" alt="image" class="w-24 mb-6">

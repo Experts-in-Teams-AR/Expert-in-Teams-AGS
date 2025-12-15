@@ -1,42 +1,12 @@
 <link rel="stylesheet" href="{{ asset('css/apps.css') }}">
 
-<style>
-@font-face {
-    font-family: 'Poppins';
-    src: url('/fonts/Poppins-Regular.ttf') format('truetype');
-    font-weight: 400;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Poppins';
-    src: url('/fonts/Poppins-Medium.ttf') format('truetype');
-    font-weight: 500;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Poppins';
-    src: url('/fonts/Poppins-Semibold.ttf') format('truetype');
-    font-weight: 600;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Poppins';
-    src: url('/fonts/Poppins-Bold.ttf') format('truetype');
-    font-weight: 700;
-    font-style: normal;
-}
-</style>
-
 <x-app-layout>
     <x-slot name="header">
         <h1 class="font-semibold text-xl text-gray-800 dark:text-gray-200 leading-tight">
             @include('partials.navbar')
         </h1>
     </x-slot>
-    <div class="justify-center items-center min-h-[85vh] px-6 md:px-20 lg:px-40 mt-10" style="font-family: 'Poppins', sans-serif;">
+    <div class="justify-center items-center min-h-[85vh] px-6 md:px-20 lg:px-40 mt-10"> <!--style="font-family: 'Poppins', sans-serif;"-->
         <div class="top-icon justify-center flex">
             <img src="/images/6.svg" width="100" height="100" alt="Top icon" />
         </div>

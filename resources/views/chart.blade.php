@@ -68,10 +68,12 @@
                             },
                             pointLabels: {
                                 font: {
+                                    family: 'Poppins',
                                     size: 24
                                 }
                             },
                             grid: {
+                                family: 'Poppins',
                                 circular: true
                             }
                         }
@@ -87,10 +89,10 @@
                             const centerY = rScale.yCenter;
 
                             const zones = [
-                                { max: 1, color: 'rgba(255, 0, 0, 0.7)' },       
-                                { max: 2, color: 'rgba(221, 255, 0, 0.7)' },     
-                                { max: 3, color: 'rgba(0, 255, 0, 0.7)' },      
-                                { max: 4, color: 'rgba(221, 255, 0, 1)' },     
+                                { max: 1, color: 'rgba(255, 0, 0, 1)' },       
+                                { max: 2, color: 'rgba(255, 232, 22, 1)' },     
+                                { max: 3, color: 'rgba(1, 209, 1, 1)' },      
+                                { max: 4, color: 'rgba(255, 232, 22, 1)' },     
                                 { max: 5, color: 'rgba(255, 0, 0, 1)' }        
                             ];
 

@@ -2,6 +2,38 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+    font-family: 'Poppins';
+    src: url('/fonts/Poppins-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('/fonts/Poppins-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('/fonts/Poppins-Semibold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('/fonts/Poppins-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
 :root {
     /* Color Palette */
     --text-dark: #0D1821; /* Text colour for lighter sections */
@@ -21,7 +53,8 @@
     --subline-medium: 1.56rem;
     --section-title-size: 3.37rem;
 }
-@layer components {
+@layer base {
+    
     body {
         font-family: var(--base-font);
         font-size: var(--base-font-size);
@@ -31,6 +64,12 @@
         margin: 0;
         padding: 0;
     }
+
+    html {
+    scroll-behavior: smooth;
+    }
+}
+@layer components {
 
     .site-header {
         background-color: var(--background);

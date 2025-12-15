@@ -4,7 +4,7 @@
             @include('partials.navbar')
         </h1>
     </x-slot>
-    <div class="flex justify-center items-center min-h-[85vh] mt-10 px-6 md:px-20 lg:px-40" style="font-family: 'Poppins';">
+    <div class="flex justify-center items-center min-h-[85vh] mt-10 px-6 md:px-20 lg:px-40">  <!--style="font-family: 'Poppins';"-->
         <div class="w-full max-w-4xl bg-white rounded-3xl shadow-md p-8 md:p-12 text-center">
             
             {{-- Title --}}
