@@ -30,6 +30,9 @@
                 sessionData.pauseCount
             ];
 
+        document.fonts.ready.then(() => {
+            Chart.defaults.font.family = 'Poppins';
+
             const ctx = document.getElementById('radarChart').getContext('2d');
             new Chart(ctx, {
                 type: 'radar',
@@ -63,7 +66,7 @@
                             max: 5,
                             ticks: {
                                 stepSize: 1,
-                                font: { size: 16 },
+                                font: {family: 'Poppins', size: 16 },
                                 showLabelBackdrop: false
                             },
                             pointLabels: {
@@ -73,7 +76,6 @@
                                 }
                             },
                             grid: {
-                                family: 'Poppins',
                                 circular: true
                             }
                         }
@@ -108,6 +110,7 @@
                     }
                 ]
             });
+        });
         </script>
     </div>
 </x-app-layout>
