@@ -20,17 +20,17 @@
 
                 <div class="flex flex-col md:flex-row gap-8 mb-4">
                     <div class="flex-1">
-                        <label for="minutes" class="block text-lg md:text-2xl font-medium mb-2">
-                            Estimated Speech Duration (minutes)
+                        <label for="minutes" class="block text-lg md:text-2xl font-semibold mb-2">
+                            Minutes
                         </label>
-                        <input type="text" id="minutes" name="minutes"
+                        <input required type="text" id="minutes" name="minutes"
                             class="rounded-xl bg-gray-100 w-full h-14 text-xl md:text-2xl px-4"
                             placeholder="Please insert minutes (e.g. 5)">
                     </div>
 
                     <div class="flex-1">
-                        <label for="second" class="block text-lg md:text-2xl font-medium mb-2">
-                            Estimated Speech Duration (seconds)
+                        <label for="second" class="block text-lg md:text-2xl font-semibold mb-2">
+                            Seconds
                         </label>
                         <input type="text" id="second" name="second"
                             class="rounded-xl bg-gray-100 w-full h-14 text-xl md:text-2xl px-4"

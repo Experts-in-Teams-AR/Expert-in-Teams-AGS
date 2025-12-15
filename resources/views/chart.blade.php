@@ -8,8 +8,13 @@
         <div class="border-10 border-gray-300 p-4 rounded-3xl">
             <h1 class="text-center text-3xl font-bold">Results for {{ $session->user->name }}</h1>
             <p class="text-center text-2xl">Recorded on: {{ $session->created_at->format('Y-m-d H:i') }}</p>
-            <div class="flex justify-center items-center mt-6">
-                <canvas id="radarChart" width="550" height="550"></canvas>
+            <div class="grid grid-cols-2 mt-6">
+                <div>
+
+                </div>
+                <div class="mt-6">
+                    <canvas id="radarChart" width="550" height="550"></canvas>
+                </div>
             </div>
         </div>
         <script src="{{ asset('js/Chart.min.js') }}"></script>

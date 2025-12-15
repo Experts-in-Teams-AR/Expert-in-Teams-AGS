@@ -8,16 +8,16 @@
         <div class="w-full max-w-4xl bg-white rounded-3xl shadow-md p-8 md:p-12 text-center">
             
             {{-- Title --}}
-            <p class="text-2xl md:text-4xl mb-4 text-gray-800">Speaking Session</p>
+            <p class="text-2xl md:text-4xl mb-4 text-gray-800">Practice Session</p>
             <p class="text-base md:text-xl text-gray-500 mb-10">
-                Click start when you're ready. The Audience Reactor will analyze your speech in real-time.
+                Get ready for your speech. Stand in front of the Audience Reactor. Recording of your speech will start after the sound. 
             </p>
 
             <div class="relative inline-block mb-10">
                 <img src="{{ asset('images/10.svg') }}" alt="Recording Image" class="w-32 md:w-44 mx-auto rounded-3xl">
                 <div class="flex items-center justify-center gap-2 bg-[#9EE493] text-gray-800 font-semibold rounded-full px-4 py-1 shadow-sm">
                     <span class="font-bold text-3xl">•</span>
-                    <span class="text-base md:text-lg tracking-wide">RECORDING</span>
+                    <span class="text-base md:text-lg tracking-wide">PREPARE</span>
                 </div>
             </div>
 
@@ -35,7 +35,7 @@
                             seconds = seconds < 10 ? "0" + seconds : seconds;
                             timerDisplay.textContent = timeLeft > 0 
                                 ? `${minutes}:${seconds}`
-                                : "Time's up!";
+                                : "Speak now!";
                             timeLeft--;
                             if (timeLeft < 0) clearInterval(interval);
                         }, 1000);
@@ -44,14 +44,11 @@
                 </script>
             </div>
 
-            {{-- Reminder Text --}}
-            <p class="text-xl md:text-2xl text-gray-800 mb-12">Speak clearly and naturally</p>
-
             {{-- Stop Practice Button --}}
             <div class="flex justify-center items-center gap-3 bg-[#344966] transition-colors rounded-xl w-full md:w-1/2 mx-auto h-16 mb-4">
                 <img src="{{ asset('images/7.svg') }}" alt="Stop Icon" class="w-8">
                 <a href="{{ route('session.stopsession') }}" class="text-xl md:text-2xl text-white font-semibold">
-                    Stop Practice
+                    View results
                 </a>
             </div>
 
