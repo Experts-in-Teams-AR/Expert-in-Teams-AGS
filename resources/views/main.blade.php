@@ -409,7 +409,7 @@
             </div>
         
             <!-- Card Bottom -->
-             <div class="bg-[#EDF2F4] rounded-2xl shadow-sm p-6 px-10 border border-black-100 transition-shadow mt-7 md:col-span-2">
+            <div class="bg-[#EDF2F4] rounded-2xl shadow-sm p-6 px-10 border border-black-100 transition-shadow mt-7 md:col-span-2">
                 <p class="text-2xl text-[var(--text-dark)]">📊 After your practice</p>
                 <p class="text-xl pt-5">Once you finish, you can see on the website:</p>
                 <ul class="why-feature-list">

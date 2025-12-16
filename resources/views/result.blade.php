@@ -20,7 +20,7 @@
         </h1>
     </x-slot>
     <div class="font-Poppins p-6">
-        <h2 class="text-4xl font-bold text-center mb-5">My Sessions</h2>
+        <h2 class="text-4xl font-bold text-center mt-5 mb-12">My Sessions</h2>
 
         @foreach($sessions as $session)
             <div class="card" onclick="window.location='{{ route('result.show', $session->id) }}'">

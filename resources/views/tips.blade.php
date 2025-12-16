@@ -16,7 +16,7 @@
                 Master the art of public speaking with our expert guidance
             </p>
             
-                <div class="grid gap-8 grid-cols-1 md:grid-cols-2 pt-5 items-start text-left px-6">
+                <div class="grid gap-8 grid-cols-1 md:grid-cols-2 pt-5 items-start text-left px-6 mb-10">
                     
                     <div class="bg-[#EDF2F4] rounded-2xl shadow-sm p-6 px-10 border border-black-100 transition-shadow mt-7 md:col-span-2">
                         <ul class="space-y-4">   
@@ -81,7 +81,6 @@
                         </div>
                     </div>
 
-                    <!--- Card Why -->
                     <div class="bg-[#EDF2F4] rounded-2xl shadow-sm p-6 border border-black-100 transition-shadow">
                         <img src="/images/8.svg" alt="Mic" class="w-12 h-12 mr-3 mt-1 mb-4">
                         <p class="text-xl text-[var(--text-dark)]">Voice Quality </p>
@@ -106,7 +105,6 @@
                         </ul>
                     </div>
 
-                    <!-- Card How -->
                    <div class="bg-[#EDF2F4] rounded-2xl shadow-sm p-6 border border-black-100 transition-shadow">
                         <img src="/images/3.svg" alt="Speaker" class="w-12 h-12 mr-3 mt-1 mb-4">
                         <p class="text-xl text-[var(--text-dark)]">Confidence Building </p>
@@ -131,7 +129,6 @@
                         </ul>
                     </div>
                 
-                    <!-- Card Bottom -->
                     <div class="bg-[#EDF2F4] rounded-2xl shadow-sm p-6 px-10 border border-black-100 transition-shadow md:col-span-2"> 
                         <li class="flex items-start">
                             <img src="/images/15.svg" alt="Exclamation" class="w-6 h-6 mr-3 mt-1">
