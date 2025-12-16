@@ -41,7 +41,6 @@ Route::get('/results', [ResultController::class, 'index'])->middleware(['auth'])
 
 Route::get('/tips', [TipsController::class, 'index'])->middleware(['auth'])->name('tips');
 
-Route::get('/history', [HistoryController::class, 'index'])->middleware(['auth'])->name('history');
 
 Route::get('/export', [ExportController::class, 'index'])->middleware(['auth'])->name('export');
 Route::get('/export-new', [ExportController::class, 'export'])->middleware(['auth'])->name('export.new');
