@@ -485,8 +485,6 @@
                 </li>
             </ol>
 
-            <!-- Button -->
-            <!-- have to edit the route -->
             <div class="button-spacing">
                 <div class="button">
                     <a href="{{ route('register') }}"> Start practicing today &#8594 </a> 
